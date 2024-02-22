@@ -27,4 +27,10 @@ Fig. 1(a). Equivalent circuit in mode-I.
 Fig. 1(b). Equivalent circuit in mode-II.
 <br><br>
 
+Voltage across inductor L: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="images/th4.png" height="25px"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="images/th5.png" height="25px">
+
+<br><br>
+Applying volt-sec balance on inductor: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="images/th6.png" height="25px">
+<br><br>
+Simplifying the expression &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="images/th7.png" height="65px">
 
