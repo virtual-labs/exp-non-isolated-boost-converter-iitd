@@ -61,4 +61,11 @@ In the event of battery voltage/load fluctuations, load voltage varies. However,
 Fig. 3.  Block Diagram of closed-loop control.
 
 </center>
+<br><br><br>
+<center>
 
+Fig. 3.  Block Diagram of closed-loop control.
+  
+<img src="images/th14.png" height="500px">
+
+</center>
