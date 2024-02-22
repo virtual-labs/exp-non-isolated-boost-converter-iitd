@@ -18,7 +18,12 @@
       "correctAnswer": "a",
       "difficulty": "beginner"
     },
-
+"2. What will be the voltage across diode (Di), when switch (Sw) is in OFF-state?"
+             
+             "Zero"
+             "V<sub>0</sub>"
+             "V<sub>in</sub>"
+             "(V<sub>0</sub> - V<sub>in</sub>)"
     {
       "question": "2. This is a Sample Question 2?",
       "answers": {
@@ -38,30 +43,12 @@
     },
 
     {
-      "question": "3. This is a Sample Question 1?",
+      "question": "3. An ideal boost converter with 24 V source voltage was operating at a duty ratio of 0.6, after some time it increased to 0.75. What will be the change in the output voltage due to increase in the duty ratio?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
-      },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
-      "correctAnswer": "a",
-      "difficulty": "beginner"
-    },
-
-    {
-      "question": "4. This is a Sample Question 1?",
-      "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Increases by 12 V",
+        "b": "Increases by 24 V",
+        "c": "Increases by 36 V",
+        "d": "Increases by 48 V"
       },
       "explanations": {
         "a": "Explanation 1  <a href='www.google.com'>here</a>",
@@ -74,12 +61,30 @@
     },
     
     {
-      "question": "5. This is a Sample Question 2?",
+      "question": "4. In a non-ideal boost converter, what is the relationship between the output power (P<sub>0</sub>) and input power (P<sub>in</sub>)?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "P<sub>0</sub> > P<sub>in</sub>",
+        "b": "P<sub>0</sub> < P<sub>in</sub>",
+        "c": "P<sub>0</sub> = P<sub>in</sub>",
+        "d": "P<sub>0</sub> = 2P sub>in</sub>"
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+            
+    {
+      "question": "5. The output voltage of ideal boost converter is 200 V and input voltage is 50 V. The duty ratio required for getting this voltage boosting is:",
+      "answers": {
+        "a": "0.5",
+        "b": "0.25",
+        "c": "0.75",
+        "d": "0.6"
       },
       "explanations": {
         "a": "Explanation 1  <a href='www.google.com'>here</a>",
