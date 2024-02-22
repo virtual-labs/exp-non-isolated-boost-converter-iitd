@@ -18,19 +18,14 @@
       "correctAnswer": "a",
       "difficulty": "beginner"
     },
-"2. What will be the voltage across diode (Di), when switch (Sw) is in OFF-state?"
-             
-             "Zero"
-             "V<sub>0</sub>"
-             "V<sub>in</sub>"
-             "(V<sub>0</sub> - V<sub>in</sub>)"
+
     {
-      "question": "2. This is a Sample Question 2?",
+      "question": "2. What will be the voltage across diode (Di), when switch (Sw) is in OFF-state?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Zero",
+        "b": "V<sub>0</sub>",
+        "c": "V<sub>in</sub>",
+        "d": "(V<sub>0</sub> - V<sub>in</sub>)"
       },
       "explanations": {
         "a": "Explanation 1  <a href='www.google.com'>here</a>",
