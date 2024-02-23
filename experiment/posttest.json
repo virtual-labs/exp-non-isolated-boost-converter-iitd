@@ -2,7 +2,7 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "<center>Answer the questions given below (refer Fig.1):<br> <img src='images/pos1.png' height='300px'></center><br><br> 1. When switch (Sw) is in ON-state, the inductor current:",
+      "question": "<center>Answer the questions given below (refer Fig.1):<br> <img src='images/pos1.png' height='300px'></center><br><br> 1. When switch (S<sub>w</sub>) is in OFF-state, the inductor current:",
       "answers": {
         "a": "Increases",
         "b": "Decreases",
@@ -15,17 +15,17 @@
         "c": "Explanation 2",
         "d": "Explanation 2"
       },
-      "correctAnswer": "a",
+      "correctAnswer": "b",
       "difficulty": "beginner"
     },
 
     {
-      "question": "2. What will be the voltage across diode (Di), when switch (Sw) is in OFF-state?",
+      "question": "2. What will be the voltage across inductor (<sub>vL</sub>) when diode (<sub>Di</sub>) is in conducting state?",
       "answers": {
         "a": "Zero",
         "b": "V<sub>0</sub>",
         "c": "V<sub>in</sub>",
-        "d": "(V<sub>0</sub> - V<sub>in</sub>)"
+        "d": "(V<sub>g</sub> - V<sub>0</sub>)"
       },
       "explanations": {
         "a": "Explanation 1  <a href='www.google.com'>here</a>",
@@ -33,17 +33,17 @@
         "c": "Explanation 2",
         "d": "Explanation 2"
       },
-      "correctAnswer": "a",
+      "correctAnswer": "d",
       "difficulty": "beginner"
     },
 
     {
       "question": "3. An ideal boost converter with 24 V source voltage was operating at a duty ratio of 0.6, after some time it increased to 0.75. What will be the change in the output voltage due to increase in the duty ratio?",
       "answers": {
-        "a": "Increases by 12 V",
-        "b": "Increases by 24 V",
-        "c": "Increases by 36 V",
-        "d": "Increases by 48 V"
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
       },
       "explanations": {
         "a": "Explanation 1  <a href='www.google.com'>here</a>",
@@ -58,10 +58,10 @@
     {
       "question": "4. In a non-ideal boost converter, what is the relationship between the output power (P<sub>0</sub>) and input power (P<sub>in</sub>)?",
       "answers": {
-        "a": "P<sub>0</sub> > P<sub>in</sub>",
-        "b": "P<sub>0</sub> < P<sub>in</sub>",
-        "c": "P<sub>0</sub> = P<sub>in</sub>",
-        "d": "P<sub>0</sub> = 2P sub>in</sub>"
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
       },
       "explanations": {
         "a": "Explanation 1  <a href='www.google.com'>here</a>",
@@ -76,10 +76,10 @@
     {
       "question": "5. The output voltage of ideal boost converter is 200 V and input voltage is 50 V. The duty ratio required for getting this voltage boosting is:",
       "answers": {
-        "a": "0.5",
-        "b": "0.25",
-        "c": "0.75",
-        "d": "0.6"
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
       },
       "explanations": {
         "a": "Explanation 1  <a href='www.google.com'>here</a>",
