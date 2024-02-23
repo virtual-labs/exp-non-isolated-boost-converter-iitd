@@ -1,1 +1,1 @@
-## Performance measurement and analysis of non-isolated DC-DC Boost converter
+## Performance Measurement and Analysis of Non-isolated DC-DC Boost Converter
