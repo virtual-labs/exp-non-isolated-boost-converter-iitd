@@ -38,12 +38,12 @@
     },
     
     {
-      "question": "3. Which of the following element cannot be used as switch (Sw) in boost converter?",
+      "question": "3. When high PWM gate signal is given to the switch (Sw):",
       "answers": {
-        "a": "MOSFET",
-        "b": "IGBT",
-        "c": "BJT",
-        "d": "Diode"
+        "a": "Switch turns-ON and diode turns-OFF",
+        "b": "Switch turns-OFF and diode turns-ON",
+        "c": "Both switch and diode turn-OFF",
+        "d": "Both switch and diode turn-ON"
       },
       "explanations": {
         "a": "Explanation 1  <a href='www.google.com'>here</a>",
@@ -56,12 +56,12 @@
     },
         
     {
-      "question": "4. What is the relationship between load current (I<sub>0</sub>) and average source current (I<sub>in</sub>) of a boost converter if voltage gain is “M” ?",
+      "question": "4. According to the principle of volt-sec balance:",
       "answers": {
-        "a": "I<sub>in</sub> = (M-1) I<sub>0</sub>",
-        "b": "I<sub>0</sub> = M I<sub>in</sub>",
-        "c": "I<sub>0</sub> = I<sub>in</sub>",
-        "d": "I<sub>in</sub> = M I<sub>0</sub>  "
+        "a": "Average voltage across capacitor is zero",
+        "b": "Average voltage across inductor is zero",
+        "c": "Average voltage across diode is zero",
+        "d": "Average voltage across switch is zero"
       },
       "explanations": {
         "a": "Explanation 1  <a href='www.google.com'>here</a>",
@@ -69,17 +69,17 @@
         "c": "Explanation 2",
         "d": "Explanation 2"
       },
-      "correctAnswer": "a",
+      "correctAnswer": "b",
       "difficulty": "beginner"
     },
     
     {
-      "question": "5. What will be the effect of reversing the diode terminals in Boost converter?",
+      "question": "5. Calculate the average source current in an ideal boost converter delivering a load current of 2A at a duty ratio of 0.6.",
       "answers": {
-        "a": "Converter will step down the input voltage",
-        "b": "Converter will not work at all",
-        "c": "It will work as a boost converter with inverted load voltage polarity.",
-        "d": "Converter will step up the input voltage"
+        "a": "1.2 A",
+        "b": "2.0 A",
+        "c": "5.0 A",
+        "d": "3.33 A"
       },
       "explanations": {
         "a": "Explanation 1  <a href='www.google.com'>here</a>",
