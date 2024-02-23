@@ -2,12 +2,12 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "<center>Answer the questions given below (refer Fig.1):<br> <img src='images/pre1.png' height='300px'></center><br><br> 1. What is the use of Boost converter?",
-      "answers": {  
-        "a": "To convert the AC input voltage to DC output voltage.",
-        "b": "To convert the DC input voltage to AC output voltage.",
-        "c": "To step-down the DC input voltage.",
-        "d": "To step-up the DC input voltage."
+      "question": "<center>Answer the questions given below (refer Fig.1):<br> <img src='images/pre1.png' height='300px'></center><br><br> 1. Which of the following statements is true for an ideal boost converter?",
+      "answers": {        
+        "a": "It boosts the source current.",
+        "b": "It boosts the source voltage.",
+        "c": "It boosts the input power.",
+        "d": "It boosts the switching frequency."
       },
       "explanations": {
         "a": "Explanation 1  <a href='www.google.com'>here</a>",
@@ -15,7 +15,7 @@
         "c": "Explanation 2",
         "d": "Explanation 2"
       },
-      "correctAnswer": "a",
+      "correctAnswer": "b",
       "difficulty": "beginner"
     },
       
