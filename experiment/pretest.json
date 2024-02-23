@@ -20,7 +20,7 @@
     },
       
     {
-      "question": "2. Voltage conversion ratio of boost converter is given by:",
+      "question": "2. Voltage conversion ratio of boost converter is:",
       "answers": {
         "a": "D",
         "b": "(1-D)",
@@ -33,7 +33,7 @@
         "c": "Explanation 2",
         "d": "Explanation 2"
       },
-      "correctAnswer": "a",
+      "correctAnswer": "c",
       "difficulty": "beginner"
     },
     
