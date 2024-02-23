@@ -38,48 +38,12 @@
     },
 
     {
-      "question": "3. An ideal boost converter with 24 V source voltage was operating at a duty ratio of 0.6, after some time it increased to 0.75. What will be the change in the output voltage due to increase in the duty ratio?",
+      "question": "3. A solar array of 120 V is used to deliver the power to a 400 V DC grid through a boost converter operating at 50 kHz switching frequency. What should be the duty ratio (D<sub>1</sub>) of boost converter? What will be the required duty ratio (D<sub>2</sub>) when the switching frequency changes to 100 kHz?",
       "answers": {
-        "a": "",
-        "b": "",
-        "c": "",
-        "d": ""
-      },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
-      "correctAnswer": "a",
-      "difficulty": "beginner"
-    },
-    
-    {
-      "question": "4. In a non-ideal boost converter, what is the relationship between the output power (P<sub>0</sub>) and input power (P<sub>in</sub>)?",
-      "answers": {
-        "a": "",
-        "b": "",
-        "c": "",
-        "d": ""
-      },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
-      "correctAnswer": "a",
-      "difficulty": "beginner"
-    },
-            
-    {
-      "question": "5. The output voltage of ideal boost converter is 200 V and input voltage is 50 V. The duty ratio required for getting this voltage boosting is:",
-      "answers": {
-        "a": "",
-        "b": "",
-        "c": "",
-        "d": ""
+        "a": "D<sub>1</sub> = 0.7 ; D<sub>2</sub> = 0.35",
+        "b": "D<sub>1</sub> = 0.35 ; D<sub>2</sub> = 0.7",
+        "c": "D<sub>1</sub> = 0.7 ; D<sub>2</sub> = 0.7",
+        "d": "D<sub>1</sub> = 0.7 ; D<sub>2</sub> = 0.175"
       },
       "explanations": {
         "a": "Explanation 1  <a href='www.google.com'>here</a>",
@@ -88,6 +52,43 @@
         "d": "Explanation 2"
       },
       "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    
+    {
+      "question": "4. A boost converter delivering an output power of 1.0 kW has an efficiency of 92%. Calculate the total losses (P<sub>Loss</sub>) of the converter.",
+      "answers": {
+        
+        "a": "P<sub>Loss</sub> = 80 W",
+        "b": "P<sub>Loss</sub> = 87 W",
+        "c": "P<sub>Loss</sub> = 73 W",
+        "d": "P<sub>Loss</sub> = 92 W"
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+            
+    {
+      "question": "5. Voltage stress of switch (<sub>vSw</sub>) and diode (<sub>vDi</sub>) are :",
+      "answers": {
+        "a": "<sub>vSw</sub> = V<sub>0</sub> & <sub>vDi</sub> = V<sub>g</sub>",
+        "b": "<sub>vSw</sub> = V<sub>g</sub> & <sub>vDi</sub> = V<sub>g</sub>",
+        "c": "<sub>vSw</sub> = V<sub>g</sub> & <sub>vDi</sub> = V<sub>0</sub>",
+        "d": "<sub>vSw</sub> = V<sub>0</sub> & <sub>vDi</sub> = V<sub>0</sub>"
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "d",
       "difficulty": "beginner"
     }
   ]
