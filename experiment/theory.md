@@ -151,7 +151,63 @@ On solving eqn. 7
 <br>
 <div style="float: left; width:100%;"><br>
 
-**c) Voltage Regulation and Closed-loop Control:**
+**c) Power balance under ideal condition (neglecting losses):**
+
+From Fig. 1, the source current itself is the inductor current and hence
+
+</div>
+
+Current through capacitor
+
+**Mode – I :**
+<br>
+<div style="float: left; width:50%;">
+  <img src="images/th13.png" height="30px">
+      </div>
+<div style="float: right; width:50%; text-align:center;">
+    ..(9)
+      </div>
+<br><br>
+
+**Mode – II :**
+<br>
+<div style="float: left; width:50%;">
+  <img src="images/th14.png" height="30px">
+      </div>
+<div style="float: right; width:50%; text-align:center;">
+    ..(10)
+      </div>
+<br><br>      
+
+Applying charge-sec balance on capacitor (eqn. 5 and 6)
+<br>
+
+<div style="float: left; width:50%;">
+  <img src="images/th15.png" height="60px">
+      </div>
+<div style="float: right; width:50%; text-align:center;">
+    ..(11)
+      </div>
+<br>
+<div style="float: left; width:100%;">
+  
+On solving eqn. 11
+</div>
+
+<br>
+<div style="float: left; width:50%;">
+  <img src="images/th16.png" height="30px">
+      </div>
+<div style="float: right; width:50%; text-align:center;">
+    ..(12)
+      </div>
+<br>
+<div style="float: left; width:100%;"><br>
+
+**c) Power balance under ideal condition (neglecting losses):**
+
+From Fig. 1, the source current itself is the inductor current and hence
+
 </div>
 <br><br>==================================<br><br>
 <div style="float: left; width:100%;">
