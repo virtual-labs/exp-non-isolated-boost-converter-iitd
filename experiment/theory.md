@@ -148,7 +148,7 @@ On solving eqn. 7
 <div style="float: left; width:100%;"><br>
 
 **c) Power balance under ideal condition (neglecting losses):**
-<br>
+<br><br>
 From Fig. 1, the source current itself is the inductor current and hence
 <br>
 </div>
@@ -160,13 +160,11 @@ From Fig. 1, the source current itself is the inductor current and hence
 <div style="float: right; width:50%; text-align:center;">
     ..(9)
       </div>
-
-
+      
 <div style="float: left; width:100%;"><br><br>
 Simplifying eqns. 8 and 9 gives the current gain
 <br><br>
 </div>
-
 
 <div style="float: left; width:50%;">
   <img src="images/th13.png" height="60px">
@@ -179,8 +177,6 @@ Simplifying eqns. 8 and 9 gives the current gain
 From eqns. 4 and 10
 <br><br> 
 </div>
-
-<br>
 
 <div style="float: left; width:50%;">
   <img src="images/th14.png" height="60px">
