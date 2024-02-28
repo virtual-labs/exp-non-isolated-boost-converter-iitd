@@ -131,12 +131,13 @@ Applying charge-sec balance on capacitor (eqn. 5 and 6)
 <div style="float: right; width:50%; text-align:center;">
     ..(7)
       </div>
-<br><br>
-<div style="float: left; width:100%;">
+
+<div style="float: left; width:100%;"><br><br>
 On solving eqn. 7
+<br><br>
 </div>
 
-<br>
+
 <div style="float: left; width:50%;">
   <img src="images/th11.png" height="60px">
       </div>
@@ -147,7 +148,9 @@ On solving eqn. 7
 <div style="float: left; width:100%;"><br>
 
 **c) Power balance under ideal condition (neglecting losses):**
+<br>
 From Fig. 1, the source current itself is the inductor current and hence
+<br>
 </div>
 
 <br>
@@ -157,9 +160,9 @@ From Fig. 1, the source current itself is the inductor current and hence
 <div style="float: right; width:50%; text-align:center;">
     ..(9)
       </div>
-<br><br>
 
-<div style="float: left; width:100%;">
+
+<div style="float: left; width:100%;"><br><br>
 Simplifying eqns. 8 and 9 gives the current gain
 <br><br>
 </div>
@@ -170,10 +173,9 @@ Simplifying eqns. 8 and 9 gives the current gain
       </div>
 <div style="float: right; width:50%; text-align:center;">
     ..(10)
-      </div>
-<br><br>      
+      </div>    
 
-<div style="float: left; width:100%;">
+<div style="float: left; width:100%;"><br><br> 
 From eqns. 4 and 10
 <br><br> 
 </div>
@@ -186,9 +188,9 @@ From eqns. 4 and 10
 <div style="float: right; width:50%; text-align:center;">
     ..(11)
       </div>
-<br><br> 
+
 <div style="float: left; width:100%;">
-  
+<br><br>   
 Hence under ideal condition, the power drawn from the source is equal to power supplied to load.
 </div>
 
