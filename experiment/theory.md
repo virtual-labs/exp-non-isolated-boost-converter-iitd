@@ -49,10 +49,10 @@ Voltage across inductor L:
 <br>
 <div style="float: left; width:50%;">
   <img src="images/th4.png" height="25px">
-      </div>
+</div>
 <div style="float: right; width:50%; text-align:center;">
     ..(1)
-      </div>
+</div>
 <br><br>
 
 **Mode – II :**
@@ -93,10 +93,11 @@ On simplifying the eqn. 3
 **b) Average current through inductor (I<sub>L</sub>):**
 
 Current through capacitor
-</div>
-
-**Mode – I :**
 <br>
+**Mode – I :**
+</div>
+<br>
+
 <div style="float: left; width:50%;">
   <img src="images/th8.png" height="30px">
       </div>
@@ -107,6 +108,7 @@ Current through capacitor
 
 **Mode – II :**
 <br>
+
 <div style="float: left; width:50%;">
   <img src="images/th9.png" height="30px">
       </div>
