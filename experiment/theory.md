@@ -256,7 +256,7 @@ Fig. 3. Current through various components.
     <td>Average current</td>
   </tr>
   <tr>
-    <td>A</td>
+    <td>i<sub>L</sub></td>
     <td>B</td>
     <td>C</td>
     <td>D</td>
@@ -264,7 +264,23 @@ Fig. 3. Current through various components.
     <td>F</td>
   </tr>
   <tr>
-    <td>a</td>
+    <td>i<sub>C</sub></td>
+    <td>b</td>
+    <td>c</td>
+    <td>d</td>
+    <td>e</td>
+    <td>f</td>
+  </tr>
+  <tr>
+    <td>i<sub>Sw</sub></td>
+    <td>b</td>
+    <td>c</td>
+    <td>d</td>
+    <td>e</td>
+    <td>f</td>
+  </tr>
+  <tr>
+    <td>i<sub>Di</sub></td>
     <td>b</td>
     <td>c</td>
     <td>d</td>
@@ -272,6 +288,11 @@ Fig. 3. Current through various components.
     <td>f</td>
   </tr>
 </table>
+
+
+
+
+
 <br><br>==================================<br><br>
 <div style="float: left; width:100%;">
 <br>
