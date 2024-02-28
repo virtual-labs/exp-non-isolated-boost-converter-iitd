@@ -176,7 +176,11 @@ Simplifying eqns. 8 and 9 gives the current gain
       </div>
 <br><br>      
 
+<div style="float: left; width:100%;">
 From eqns. 4 and 10
+<br>
+</div>
+
 <br>
 
 <div style="float: left; width:50%;">
