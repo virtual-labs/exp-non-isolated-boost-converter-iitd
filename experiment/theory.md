@@ -227,11 +227,6 @@ Therefore, the inductor ripple current is
       </div>
 <br><br>      
 
-<div style="float: left; width:100%;">
-  
-On solving eqn. 7
-</div>
-
 <br>
 <div style="float: left; width:100%;"><br>
 
