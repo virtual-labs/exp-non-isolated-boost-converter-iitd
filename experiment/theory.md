@@ -103,7 +103,8 @@ Fig. 3.  Circuit configuration of conventional boost converter with non-idealiti
 
 </center>
 
-Voltage across inductor L:
+
+Current through capacitor
 
 **Mode – I :**
 <br>
@@ -125,7 +126,7 @@ Voltage across inductor L:
       </div>
 <br><br>      
 
-Applying volt-sec balance on inductor (eqn. 5 and 6)
+Applying charge-sec balance on capacitor (eqn. 5 and 6)
 <br>
 
 <div style="float: left; width:50%;">
@@ -146,7 +147,9 @@ On solving eqn. 7
       </div>
 <br>
 <div style="float: left; width:100%;"><br>
-  
+
+<br><br>==================================<br><br> 
+
 **c) Voltage Regulation and Closed-loop Control:**
 </div>
 
