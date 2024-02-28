@@ -90,9 +90,8 @@ On simplifying the eqn. 3
 <br>
 <div style="float: left; width:100%;"><br>
   
-**b) Effect of non-idealities on voltage gain expression:**
+**b) Average current through inductor (I<sub>L</sub>):**
 </div>
-
 Current through capacitor
 
 **Mode – I :**
@@ -113,13 +112,13 @@ Current through capacitor
 <div style="float: right; width:50%; text-align:center;">
     ..(6)
       </div>
-<br><br>      
+<br><br>
 
 Applying charge-sec balance on capacitor (eqn. 5 and 6)
 <br>
 
 <div style="float: left; width:50%;">
-  <img src="images/th10.png" height="60px">
+  <img src="images/th10.png" height="30px">
       </div>
 <div style="float: right; width:50%; text-align:center;">
     ..(7)
@@ -146,9 +145,6 @@ From Fig. 1, the source current itself is the inductor current and hence
 
 </div>
 
-Current through capacitor
-
-**Mode – I :**
 <br>
 <div style="float: left; width:50%;">
   <img src="images/th12.png" height="30px">
@@ -158,8 +154,9 @@ Current through capacitor
       </div>
 <br><br>
 
-**Mode – II :**
+Simplifying eqns. 8 and 9 gives the current gain
 <br>
+
 <div style="float: left; width:50%;">
   <img src="images/th13.png" height="30px">
       </div>
@@ -168,7 +165,7 @@ Current through capacitor
       </div>
 <br><br>      
 
-Applying charge-sec balance on capacitor (eqn. 5 and 6)
+From eqns. 4 and 10
 <br>
 
 <div style="float: left; width:50%;">
@@ -180,7 +177,7 @@ Applying charge-sec balance on capacitor (eqn. 5 and 6)
 <br>
 <div style="float: left; width:100%;">
   
-On solving eqn. 11
+Hence under ideal condition, the power drawn from the source is equal to power supplied to load.
 </div>
 
 <br>
@@ -196,13 +193,8 @@ On solving eqn. 11
 **d) Inductor current ripple:**     
 
 From eqn. 1,
-
 </div>
 
-
-Current through capacitor
-
-**Mode – I :**
 <br>
 <div style="float: left; width:50%;">
   <img src="images/th16.png" height="30px">
@@ -212,8 +204,11 @@ Current through capacitor
       </div>
 <br><br>
 
-**Mode – II :**
-<br>
+<div style="float: left; width:100%;">
+  
+Therefore, the inductor ripple current is    
+</div>
+
 <div style="float: left; width:50%;">
   <img src="images/th17.png" height="30px">
       </div>
@@ -230,17 +225,24 @@ On solving eqn. 7
 <br>
 <div style="float: left; width:100%;"><br>
 
-**c) Power balance under ideal condition (neglecting losses):**
+**e) Current through various components:**
 
-From Fig. 1, the source current itself is the inductor current and hence
+The current through various components are given in Fig. 3.
 
 </div>
 
+<center>
+  <img src="images/th18.png" height="350px">
+  
+Fig. 3. Current through various components.
 
+</center>
+<br>
+Fig. 
 <br><br>==================================<br><br>
 <div style="float: left; width:100%;">
 <br>
-In the event of battery voltage/load fluctuations, load voltage varies. However, DC-loads require constant voltage for their feasible/efficient operation, which demands automatic control. A simple PI-controller (proportional plus integral controller [2], see Fig. 5(a)) is capable of maintaining a constant load voltage despite the fluctuations (battery voltage/load). Here, the controller adjusts the pulse width of the PWM signal [2] according to the input error signal. As shown in Fig. 5(b), the error signal is the difference between the reference voltage and actual load voltage.
+~In the event of battery voltage/load fluctuations, load voltage varies. However, DC-loads require constant voltage for their feasible/efficient operation, which demands automatic control. A simple PI-controller (proportional plus integral controller [2], see Fig. 5(a)) is capable of maintaining a constant load voltage despite the fluctuations (battery voltage/load). Here, the controller adjusts the pulse width of the PWM signal [2] according to the input error signal. As shown in Fig. 5(b), the error signal is the difference between the reference voltage and actual load voltage.~
 </div>
 
 <br>
