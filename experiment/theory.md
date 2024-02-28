@@ -118,9 +118,11 @@ Current through capacitor
     ..(6)
       </div>
 <br><br>
-
+<div style="float: left; width:100%;"><br>
 Applying charge-sec balance on capacitor (eqn. 5 and 6)
 <br>
+</div>
+
 
 <div style="float: left; width:50%;">
   <img src="images/th10.png" height="30px">
