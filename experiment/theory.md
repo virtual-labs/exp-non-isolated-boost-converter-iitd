@@ -138,7 +138,7 @@ On solving eqn. 7
 
 <br>
 <div style="float: left; width:50%;">
-  <img src="images/th11.png" height="30px">
+  <img src="images/th11.png" height="60px">
       </div>
 <div style="float: right; width:50%; text-align:center;">
     ..(8)
@@ -166,7 +166,7 @@ Simplifying eqns. 8 and 9 gives the current gain
 
 
 <div style="float: left; width:50%;">
-  <img src="images/th13.png" height="30px">
+  <img src="images/th13.png" height="60px">
       </div>
 <div style="float: right; width:50%; text-align:center;">
     ..(10)
@@ -194,7 +194,7 @@ Hence under ideal condition, the power drawn from the source is equal to power s
 
 <br><br>
 <div style="float: left; width:50%;">
-  <img src="images/th15.png" height="30px">
+  <img src="images/th15.png" height="32px">
       </div>
 <div style="float: right; width:50%; text-align:center;">
     ..(12)
@@ -209,7 +209,7 @@ From eqn. 1,
 
 <br>
 <div style="float: left; width:50%;">
-  <img src="images/th16.png" height="30px">
+  <img src="images/th16.png" height="60px">
       </div>
 <div style="float: right; width:50%; text-align:center;">
     ..(13)
@@ -222,7 +222,7 @@ Therefore, the inductor ripple current is
 </div>
 
 <div style="float: left; width:50%;">
-  <img src="images/th17.png" height="30px">
+  <img src="images/th17.png" height="60px">
       </div>
 <div style="float: right; width:50%; text-align:center;">
     ..(14)
@@ -244,7 +244,7 @@ The current through various components are given in Fig. 3.
 </div>
 
 <center>
-  <img src="images/th18.png" height="350px">
+  <img src="images/th18.png">
   
 Fig. 3. Current through various components.
 
