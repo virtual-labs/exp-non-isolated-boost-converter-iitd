@@ -91,8 +91,9 @@ On simplifying the eqn. 3
 <div style="float: left; width:100%;"><br>
   
 **b) Average current through inductor (I<sub>L</sub>):**
-</div>
+
 Current through capacitor
+</div>
 
 **Mode – I :**
 <br>
