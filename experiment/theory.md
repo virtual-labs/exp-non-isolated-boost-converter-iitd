@@ -256,6 +256,14 @@ Fig. 3. Current through various components.
     <td style="text-align: center; font-weight: bold;">Average Current</td>
   </tr>
   <tr>
+    <td></td>
+    <td>i<sub>min</sub></td>
+    <td>i<sub>max</sub></td>
+    <td>i<sub>min</sub></td>
+    <td>i<sub>max</sub></td>
+    <td>I<sub>avg</sub></td>
+  </tr>
+  <tr>
     <td>i<sub>L</sub></td>
     <td>B</td>
     <td>C</td>
