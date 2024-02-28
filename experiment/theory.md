@@ -106,6 +106,7 @@ Current through capacitor
     ..(5)
       </div>
 <br><br>
+
 <div style="float: left; width:100%;"><br>
   
   **Mode – II :**
@@ -118,6 +119,7 @@ Current through capacitor
     ..(6)
       </div>
 <br><br>
+
 <div style="float: left; width:100%;"><br>
 Applying charge-sec balance on capacitor (eqn. 5 and 6)
 <br>
