@@ -250,7 +250,31 @@ Fig. 3. Current through various components.
 
 </center>
 <br>
-Fig. 
+
+<table>
+  <tr style="text-align: center;">
+    <td>1</td>
+    <td colspan="2">2</td>
+    <td colspan="2">3</td>
+    <td>4</td>
+  </tr>
+  <tr>
+    <td>A</td>
+    <td>B</td>
+    <td>C</td>
+    <td>D</td>
+    <td>E</td>
+    <td>F</td>
+  </tr>
+  <tr>
+    <td>a</td>
+    <td>b</td>
+    <td>c</td>
+    <td>d</td>
+    <td>e</td>
+    <td>f</td>
+  </tr>
+</table>
 <br><br>==================================<br><br>
 <div style="float: left; width:100%;">
 <br>
