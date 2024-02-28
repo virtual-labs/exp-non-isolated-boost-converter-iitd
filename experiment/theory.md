@@ -108,7 +108,7 @@ Voltage across inductor L:
 **Mode – I :**
 <br>
 <div style="float: left; width:50%;">
-  <img src="images/th9.png" height="25px">
+  <img src="images/th9.png" height="30px">
       </div>
 <div style="float: right; width:50%; text-align:center;">
     ..(5)
@@ -118,7 +118,7 @@ Voltage across inductor L:
 **Mode – II :**
 <br>
 <div style="float: left; width:50%;">
-  <img src="images/th10.png" height="25px">
+  <img src="images/th10.png" height="30px">
       </div>
 <div style="float: right; width:50%; text-align:center;">
     ..(6)
@@ -129,7 +129,7 @@ Applying volt-sec balance on inductor (eqn. 5 and 6)
 <br>
 
 <div style="float: left; width:50%;">
-  <img src="images/th11.png" height="25px">
+  <img src="images/th11.png" height="60px">
       </div>
 <div style="float: right; width:50%; text-align:center;">
     ..(7)
@@ -139,7 +139,7 @@ Applying volt-sec balance on inductor (eqn. 5 and 6)
 On solving eqn. 7
 <br>
 <div style="float: left; width:50%;">
-  <img src="images/th12.png" height="100px">
+  <img src="images/th12.png" height="30px">
       </div>
 <div style="float: right; width:50%; text-align:center;">
     ..(8)
