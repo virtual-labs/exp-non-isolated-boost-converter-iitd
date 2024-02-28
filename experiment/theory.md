@@ -88,15 +88,16 @@ On simplifying the eqn. 3
   <br>
       </div>
 <br>
+
 <div style="float: left; width:100%;"><br>
   
 **b) Average current through inductor (I<sub>L</sub>):**
-
-Current through capacitor
 <br>
+Current through capacitor
+
 **Mode – I :**
 </div>
-<br>
+<br><br>
 
 <div style="float: left; width:50%;">
   <img src="images/th8.png" height="30px">
@@ -105,9 +106,10 @@ Current through capacitor
     ..(5)
       </div>
 <br><br>
-
+<div style="float: left; width:100%;"><br>
+  
 **Mode – II :**
-<br>
+<br></div>
 
 <div style="float: left; width:50%;">
   <img src="images/th9.png" height="30px">
