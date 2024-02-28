@@ -204,11 +204,67 @@ On solving eqn. 11
 <br>
 <div style="float: left; width:100%;"><br>
 
+**d) Inductor current ripple:**     
+
+From eqn. 1,
+
+</div>
+
+
+Current through capacitor
+
+**Mode – I :**
+<br>
+<div style="float: left; width:50%;">
+  <img src="images/th18.png" height="30px">
+      </div>
+<div style="float: right; width:50%; text-align:center;">
+    ..(13)
+      </div>
+<br><br>
+
+**Mode – II :**
+<br>
+<div style="float: left; width:50%;">
+  <img src="images/th19.png" height="30px">
+      </div>
+<div style="float: right; width:50%; text-align:center;">
+    ..(14)
+      </div>
+<br><br>      
+
+Applying charge-sec balance on capacitor (eqn. 5 and 6)
+<br>
+
+<div style="float: left; width:50%;">
+  <img src="images/th20.png" height="60px">
+      </div>
+<div style="float: right; width:50%; text-align:center;">
+    ..(15)
+      </div>
+<br>
+<div style="float: left; width:100%;">
+  
+On solving eqn. 7
+</div>
+
+<br>
+<div style="float: left; width:50%;">
+  <img src="images/th21.png" height="30px">
+      </div>
+<div style="float: right; width:50%; text-align:center;">
+    ..(16)
+      </div>
+<br>
+<div style="float: left; width:100%;"><br>
+
 **c) Power balance under ideal condition (neglecting losses):**
 
 From Fig. 1, the source current itself is the inductor current and hence
 
 </div>
+
+
 <br><br>==================================<br><br>
 <div style="float: left; width:100%;">
 <br>
