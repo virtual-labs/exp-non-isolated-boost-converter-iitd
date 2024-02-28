@@ -108,7 +108,7 @@ Current through capacitor
 <br><br>
 <div style="float: left; width:100%;"><br>
   
-**Mode – II :**
+  **Mode – II :**
 <br></div>
 
 <div style="float: left; width:50%;">
