@@ -123,7 +123,6 @@ Applying charge-sec balance on capacitor (eqn. 5 and 6)
 <br>
 </div>
 
-
 <div style="float: left; width:50%;">
   <img src="images/th10.png" height="30px">
       </div>
@@ -161,8 +160,11 @@ From Fig. 1, the source current itself is the inductor current and hence
       </div>
 <br><br>
 
+<div style="float: left; width:100%;">
 Simplifying eqns. 8 and 9 gives the current gain
 <br>
+</div>
+
 
 <div style="float: left; width:50%;">
   <img src="images/th13.png" height="30px">
