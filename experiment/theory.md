@@ -93,23 +93,12 @@ On simplifying the eqn. 3
 **b) Effect of non-idealities on voltage gain expression:**
 </div>
 
-<center>
-  
-<img src="images/th8.jpg" height="350px">
-
-<br>
-Fig. 3.  Circuit configuration of conventional boost converter with non-idealities.
-<br>
-
-</center>
-
-
 Current through capacitor
 
 **Mode – I :**
 <br>
 <div style="float: left; width:50%;">
-  <img src="images/th9.png" height="30px">
+  <img src="images/th8.png" height="30px">
       </div>
 <div style="float: right; width:50%; text-align:center;">
     ..(5)
@@ -119,7 +108,7 @@ Current through capacitor
 **Mode – II :**
 <br>
 <div style="float: left; width:50%;">
-  <img src="images/th10.png" height="30px">
+  <img src="images/th9.png" height="30px">
       </div>
 <div style="float: right; width:50%; text-align:center;">
     ..(6)
@@ -130,7 +119,7 @@ Applying charge-sec balance on capacitor (eqn. 5 and 6)
 <br>
 
 <div style="float: left; width:50%;">
-  <img src="images/th11.png" height="60px">
+  <img src="images/th10.png" height="60px">
       </div>
 <div style="float: right; width:50%; text-align:center;">
     ..(7)
@@ -143,7 +132,7 @@ On solving eqn. 7
 
 <br>
 <div style="float: left; width:50%;">
-  <img src="images/th12.png" height="30px">
+  <img src="images/th11.png" height="30px">
       </div>
 <div style="float: right; width:50%; text-align:center;">
     ..(8)
@@ -162,7 +151,7 @@ Current through capacitor
 **Mode – I :**
 <br>
 <div style="float: left; width:50%;">
-  <img src="images/th13.png" height="30px">
+  <img src="images/th12.png" height="30px">
       </div>
 <div style="float: right; width:50%; text-align:center;">
     ..(9)
@@ -172,7 +161,7 @@ Current through capacitor
 **Mode – II :**
 <br>
 <div style="float: left; width:50%;">
-  <img src="images/th14.png" height="30px">
+  <img src="images/th13.png" height="30px">
       </div>
 <div style="float: right; width:50%; text-align:center;">
     ..(10)
@@ -183,7 +172,7 @@ Applying charge-sec balance on capacitor (eqn. 5 and 6)
 <br>
 
 <div style="float: left; width:50%;">
-  <img src="images/th15.png" height="60px">
+  <img src="images/th14.png" height="60px">
       </div>
 <div style="float: right; width:50%; text-align:center;">
     ..(11)
@@ -196,7 +185,7 @@ On solving eqn. 11
 
 <br>
 <div style="float: left; width:50%;">
-  <img src="images/th16.png" height="30px">
+  <img src="images/th15.png" height="30px">
       </div>
 <div style="float: right; width:50%; text-align:center;">
     ..(12)
@@ -216,7 +205,7 @@ Current through capacitor
 **Mode – I :**
 <br>
 <div style="float: left; width:50%;">
-  <img src="images/th18.png" height="30px">
+  <img src="images/th16.png" height="30px">
       </div>
 <div style="float: right; width:50%; text-align:center;">
     ..(13)
@@ -226,7 +215,7 @@ Current through capacitor
 **Mode – II :**
 <br>
 <div style="float: left; width:50%;">
-  <img src="images/th19.png" height="30px">
+  <img src="images/th17.png" height="30px">
       </div>
 <div style="float: right; width:50%; text-align:center;">
     ..(14)
