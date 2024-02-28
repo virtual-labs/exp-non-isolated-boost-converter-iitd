@@ -246,14 +246,14 @@ Fig. 3. Current through various components.
 
 <table style="width: 100%; >
   <tr style="text-align: center; font-weight: bold;">
-    <td>&nbsp;</td>
-    <td colspan="2">
+    <td style="text-align: center; font-weight: bold;">&nbsp;</td>
+    <td style="text-align: center; font-weight: bold;" colspan="2">
       Mode-I<br>(DT)
     </td>
-    <td colspan="2">
+    <td style="text-align: center; font-weight: bold;" colspan="2">
       Mode-II<br>(1-D)T
     </td>
-    <td>Average Current</td>
+    <td style="text-align: center; font-weight: bold;">Average Current</td>
   </tr>
   <tr>
     <td>i<sub>L</sub></td>
