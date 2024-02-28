@@ -222,28 +222,11 @@ Current through capacitor
       </div>
 <br><br>      
 
-Applying charge-sec balance on capacitor (eqn. 5 and 6)
-<br>
-
-<div style="float: left; width:50%;">
-  <img src="images/th20.png" height="60px">
-      </div>
-<div style="float: right; width:50%; text-align:center;">
-    ..(15)
-      </div>
-<br>
 <div style="float: left; width:100%;">
   
 On solving eqn. 7
 </div>
 
-<br>
-<div style="float: left; width:50%;">
-  <img src="images/th21.png" height="30px">
-      </div>
-<div style="float: right; width:50%; text-align:center;">
-    ..(16)
-      </div>
 <br>
 <div style="float: left; width:100%;"><br>
 
