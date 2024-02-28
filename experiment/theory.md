@@ -244,7 +244,7 @@ Fig. 3. Current through various components.
 </center>
 <br>
 
-<table>
+<table style="width: 100%; >
   <tr style="text-align: center; font-weight: bold;">
     <td></td>
     <td colspan="2">
