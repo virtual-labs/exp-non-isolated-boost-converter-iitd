@@ -2,7 +2,7 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "<center>Answer the questions given below (refer Fig.1):<br> <img src='images/pos1.png' height='300px'><br><br>Fig. 2. Circuit configuration of boost converter.</center><br><br> 1. When switch (S<sub>w</sub>) is in OFF-state, the inductor current:",
+      "question": "Answer the questions given below (refer Fig.2):<br> <center> <img src='images/pos1.png' height='300px'><br><br>Fig. 2. Circuit configuration of boost converter.</center><br><br> 1. When switch (S<sub>w</sub>) is in OFF-state, the inductor current:",
       "answers": {
         "a": "Increases",
         "b": "Decreases",
@@ -20,7 +20,7 @@
     },
 
     {
-      "question": "2. What will be the voltage across inductor (<sub>vL</sub>) when diode (<sub>Di</sub>) is in conducting state?",
+      "question": "2. What will be the voltage across inductor (V<sub>L</sub>) when diode (Di) is in conducting state?",
       "answers": {
         "a": "Zero",
         "b": "V<sub>0</sub>",
