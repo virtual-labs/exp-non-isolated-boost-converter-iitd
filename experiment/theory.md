@@ -349,7 +349,7 @@ Fig. 3. Current through various components.
 
 <br>
 <div style="float: left; width:50%;">
-  <img src="images/th36.png" height="60px">
+  <img src="images/th36.png" height="70px">
       </div>
 <div style="float: right; width:50%; text-align:center;">
     ..(15)
@@ -362,7 +362,7 @@ Therefore, the inductor ripple current is
 </div>
 
 <div style="float: left; width:50%;">
-  <img src="images/th37.png" height="60px">
+  <img src="images/th37.png" height="80px">
       </div>
 <div style="float: right; width:50%; text-align:center;">
     ..(16)
@@ -454,22 +454,26 @@ Fig. 4.  Circuit configuration of conventional boost converter with non-idealiti
 Based on the operation of switch (Sw: ON/OFF-state) the operating principle of the converter is explained below briefly. 
 <br><br>
 
+<div style="float: left; width:100%;"><br>
 
 **a) Voltage conversion ratio or voltage gain (M)**
-
-Voltage across inductor L
-
+Voltage across inductor L<br>
 **Mode – I :**
+</div>
+
 <br>
 <div style="float: left; width:50%;">
-  <img src="images/th44.png" height="25px">
+  <img src="images/th44.png" height="60px">
 </div>
 <div style="float: right; width:50%; text-align:center;">
     ..(22)
 </div>
 <br><br>
-
+<div style="float: left; width:100%;"><br>
+     
 **Mode – II :**
+</div>
+
 <br>
 <div style="float: left; width:50%;">
   <img src="images/th45.png" height="25px">
@@ -509,10 +513,3 @@ Total power loss:
       </div>
 <br><br>
 
-      
-<br><br>==================================<br><br>
-<div style="float: left; width:100%;">
-<br>
-
-
-</center>
