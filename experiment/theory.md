@@ -376,7 +376,7 @@ Power loss in inductor:
 
 <br>
 <div style="float: left; width:50%;">
-  <img src="images/th36.png" height="60px">
+  <img src="images/th38.png" height="60px">
       </div>
 <div style="float: right; width:50%; text-align:center;">
     ..(17)
@@ -389,7 +389,7 @@ Power loss in capacitor:
 </div>
 
 <div style="float: left; width:50%;">
-  <img src="images/th37.png" height="60px">
+  <img src="images/th39.png" height="60px">
       </div>
 <div style="float: right; width:50%; text-align:center;">
     ..(18)
@@ -402,7 +402,7 @@ Power loss in switch:
 
 <br>
 <div style="float: left; width:50%;">
-  <img src="images/th36.png" height="60px">
+  <img src="images/th40.png" height="60px">
       </div>
 <div style="float: right; width:50%; text-align:center;">
     ..(19)
@@ -415,7 +415,7 @@ Power loss in Diode:
 </div>
 
 <div style="float: left; width:50%;">
-  <img src="images/th37.png" height="60px">
+  <img src="images/th41.png" height="60px">
       </div>
 <div style="float: right; width:50%; text-align:center;">
     ..(20)
@@ -428,7 +428,7 @@ Total power loss:
 
 <br>
 <div style="float: left; width:50%;">
-  <img src="images/th36.png" height="60px">
+  <img src="images/th42.png" height="60px">
       </div>
 <div style="float: right; width:50%; text-align:center;">
     ..(21)
@@ -445,7 +445,7 @@ Total power loss:
 <br><br>
 
 <center>
-  <img src="images/th37.png" height="350px">
+  <img src="images/th43.png" height="350px">
   
 Fig. 4.  Circuit configuration of conventional boost converter with non-idealities.
 
@@ -462,7 +462,7 @@ Voltage across inductor L
 **Mode – I :**
 <br>
 <div style="float: left; width:50%;">
-  <img src="images/th38.png" height="25px">
+  <img src="images/th44.png" height="25px">
 </div>
 <div style="float: right; width:50%; text-align:center;">
     ..(22)
@@ -472,7 +472,7 @@ Voltage across inductor L
 **Mode – II :**
 <br>
 <div style="float: left; width:50%;">
-  <img src="images/th39.png" height="25px">
+  <img src="images/th45.png" height="25px">
       </div>
 <div style="float: right; width:50%; text-align:center;">
     ..(23)
@@ -489,7 +489,7 @@ Power loss in Diode:
 </div>
 
 <div style="float: left; width:50%;">
-  <img src="images/th40.png" height="60px">
+  <img src="images/th46.png" height="60px">
       </div>
 <div style="float: right; width:50%; text-align:center;">
     ..(24)
@@ -502,7 +502,7 @@ Total power loss:
 
 <br>
 <div style="float: left; width:50%;">
-  <img src="images/th45.png" height="60px">
+  <img src="images/th47.png" height="60px">
       </div>
 <div style="float: right; width:50%; text-align:center;">
     ..(25)
