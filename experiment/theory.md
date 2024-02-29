@@ -244,8 +244,8 @@ Fig. 3. Current through various components.
 </center>
 <br>
 
-<table align="center" style="width: 100%; >
-  <tr style="text-align: center; font-weight: bold;">
+<table align="center" style="width: 100%;">
+  <tr style="text-align: center; font-weight: bold; background-color: #c9c9c9;">
     <td style="text-align: center; font-weight: bold;">&nbsp;</td>
     <td style="text-align: center; font-weight: bold;" colspan="2">
       Mode-I<br>(DT)
@@ -255,7 +255,7 @@ Fig. 3. Current through various components.
     </td>
     <td style="text-align: center; font-weight: bold;">Average Current</td>
   </tr>
-  <tr>
+  <tr style="background-color: #c9c9c9;">
     <td></td>
     <td>i<sub>min</sub></td>
     <td>i<sub>max</sub></td>
@@ -263,7 +263,7 @@ Fig. 3. Current through various components.
     <td>i<sub>max</sub></td>
     <td>I<sub>avg</sub></td>
   </tr>
-  <tr>
+  <tr style="background-color: #FFF;">
     <td>i<sub>L</sub></td>
     <td><img src="images/th19.png" height="60px"></td>
     <td><img src="images/th20.png" height="60px"></td>
@@ -271,7 +271,7 @@ Fig. 3. Current through various components.
     <td><img src="images/th22.png" height="60px"></td>
     <td><img src="images/th23a.png" height="35px"></td>
   </tr>
-  <tr>
+  <tr style="background-color: #FFF;">
     <td>i<sub>C</sub></td>
     <td><img src="images/th23b.png" height="35px"></td>
     <td><img src="images/th23c.png" height="35px"></td>
@@ -279,7 +279,7 @@ Fig. 3. Current through various components.
     <td><img src="images/th24.png" height="60px"></td>
     <td>&#48;</td>
   </tr>
-  <tr>
+  <tr style="background-color: #FFF;">
     <td>i<sub>Sw</sub></td>
     <td><img src="images/th25.png" height="60px"></td>
     <td><img src="images/th26.png" height="60px"></td>
@@ -287,7 +287,7 @@ Fig. 3. Current through various components.
     <td>&#48;</td>
     <td><img src="images/th27.png" height="60px"></td>
   </tr>
-  <tr>
+  <tr style="background-color: #FFF;">
     <td>i<sub>Di</sub></td>
     <td>&#48;</td>
     <td>&#48;</td>
@@ -306,8 +306,8 @@ Fig. 3. Current through various components.
 </div>
 <br>
 		
-<table align="center" style="width: 100%; >
-  <tr style="text-align: center; font-weight: bold;">
+<table align="center" style="width: 100%;">
+  <tr style="text-align: center; font-weight: bold; background-color: #c9c9c9;">
     <td style="text-align: center; font-weight: bold;">
       Component
     </td>
@@ -318,22 +318,22 @@ Fig. 3. Current through various components.
       Current Stress
     </td>
   </tr>
-  <tr>
+  <tr style="background-color: #FFF;">
     <td>Inductor (L)</td>
     <td><img src="images/th31.png" height="60px"></td>
     <td><img src="images/th32.png" height="60px"></td>
   </tr>
-  <tr>
+  <tr style="background-color: #FFF;">
     <td>Capacitor (C)</td>
     <td><em>V<sub>&#48;</sub></em></td>
     <td><img src="images/th33.png" height="60px"></td>
   </tr>
-  <tr>
+  <tr style="background-color: #FFF;">
     <td>Switch (Sw)</td>
     <td><em>V<sub>&#48;</sub></em></td>
     <td><img src="images/th34.png" height="60px"></td>
   </tr>
-  <tr>
+  <tr style="background-color: #FFF;">
     <td>Diode (Di)</td>
     <td><em>V<sub>&#48;</sub></em></td>
     <td><img src="images/th35.png" height="60px"></td>
