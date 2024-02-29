@@ -289,11 +289,54 @@ Fig. 3. Current through various components.
   </tr>
   <tr>
     <td>i<sub>Di</sub></td>
-    <td>b</td>
-    <td>c</td>
-    <td>d</td>
-    <td>e</td>
-    <td>f</td>
+    <td>&#48;</td>
+    <td>&#48;</td>
+    <td><img src="images/th28.png" height="60px"></td>
+    <td><img src="images/th29.png" height="60px"></td>
+    <td><img src="images/th30.png" height="60px"></td>
+  </tr>
+</table>
+
+<br>
+
+<div style="float: left; width:100%;"><br>
+
+**f) Voltage and current stress on various components:**
+
+</div>
+<br>
+		
+<table align="center" style="width: 100%; >
+  <tr style="text-align: center; font-weight: bold;">
+    <td style="text-align: center; font-weight: bold;">
+      Component
+    </td>
+    <td style="text-align: center; font-weight: bold;">
+      Voltage stress
+    </td>
+    <td style="text-align: center; font-weight: bold;">
+      Current Stress
+    </td>
+  </tr>
+  <tr>
+    <td>Inductor (L)</td>
+    <td><img src="images/th31.png" height="60px"></td>
+    <td><img src="images/th32.png" height="60px"></td>
+  </tr>
+  <tr>
+    <td>Capacitor (C)</td>
+    <td><em>V<sub>&#48;</sub></em></td>
+    <td><img src="images/th33.png" height="60px"></td>
+  </tr>
+  <tr>
+    <td>Switch (Sw)</td>
+    <td><em>V<sub>&#48;</sub></em></td>
+    <td><img src="images/th34.png" height="60px"></td>
+  </tr>
+  <tr>
+    <td>Diode (Di)</td>
+    <td><em>V<sub>&#48;</sub></em></td>
+    <td><img src="images/th35.png" height="60px"></td>
   </tr>
 </table>
 
