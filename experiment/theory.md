@@ -243,7 +243,7 @@ Fig. 3. Current through various components.
 
 </center>
 <br>
-
+<center>
 <table align="center" width="100%" >
   <tr style="text-align: center; font-weight: bold; background-color: #c9c9c9;">
     <td style="text-align: center; font-weight: bold;">&nbsp;</td>
@@ -296,7 +296,7 @@ Fig. 3. Current through various components.
     <td><img src="images/th30.png" height="60px"></td>
   </tr>
 </table>
-
+</center>
 <br>
 
 <div style="float: left; width:100%;"><br>
@@ -305,7 +305,7 @@ Fig. 3. Current through various components.
 
 </div>
 <br>
-		
+<center>		
 <table align="center" style="width: 100%;">
   <tr style="text-align: center; font-weight: bold; background-color: #c9c9c9;">
     <td style="text-align: center; font-weight: bold;">
@@ -339,6 +339,8 @@ Fig. 3. Current through various components.
     <td><img src="images/th35.png" height="60px"></td>
   </tr>
 </table>
+
+</center>
 
 <br>
 <div style="float: left; width:100%;"><br>
