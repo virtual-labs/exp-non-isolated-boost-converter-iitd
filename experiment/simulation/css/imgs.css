@@ -48,11 +48,13 @@
     display: none;
     filter:brightness(200);
     position: absolute;
+    z-index: 2000;
 
 }
 .blinkArrowRed{
     display: none;
     position: absolute;
+    z-index: 2000;
 }
 
 .main-window-videos{

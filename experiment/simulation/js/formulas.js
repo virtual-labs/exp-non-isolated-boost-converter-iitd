@@ -38,12 +38,16 @@ const Formulas = {
     },
     nonIdeal:{
         M(values){
-            const rl = 0.2, rs = 0.2, vFD = 0.7, rc = 0.25
+            const rl = 1, rSW = 0.4, vFD = 0.7, rc = 0.45
             
             let upper = 1 - ((vFD * Formulas.one_minus_D(values.D)) /  values.vIn)
-            let bottom = Formulas.one_minus_D(values.D) * (1 + (( rl + rs * values.D) /  (values.R * Math.pow(Formulas.one_minus_D(values.D),2)) ) )
+            let bottom = Formulas.one_minus_D(values.D) * (1 + (( rl + rSW * values.D) /  (values.R * Math.pow(Formulas.one_minus_D(values.D),2)) ) )
     
             let ans = upper / bottom
+            return Number(ans.toFixed(4))
+        },
+        v0(values){
+            let ans = this.M(values) * values.vIn
             return Number(ans.toFixed(4))
         },
     },
@@ -53,10 +57,10 @@ const Formulas = {
             return Number(ans.toFixed(4))
         },
         M(values){
-            const rl = 0.5, rs = 0.2, vFD = 0.7, rc = 0.25
+            const rl = 1, rSW = 0.4, vFD = 0.7, rc = 0.45
             
             let upper = 1 - ((vFD * Formulas.one_minus_D(values.D)) /  values.vIn)
-            let bottom = Formulas.one_minus_D(values.D) * (1 + (( rl + rs * values.D) /  (values.R * Math.pow(Formulas.one_minus_D(values.D),2)) ) )
+            let bottom = Formulas.one_minus_D(values.D) * (1 + (( rl + rSW * values.D) /  (values.R * Math.pow(Formulas.one_minus_D(values.D),2)) ) )
     
             let ans = upper / bottom
             return Number(ans.toFixed(4))
@@ -86,32 +90,46 @@ const Formulas = {
     },
     stress:{
         v0(values){
-            let ans = values.vIn / Formulas.one_minus_D(values.D)
+            let ans = this.M(values) * values.vIn
+            return Number(ans.toFixed(4))
+        },
+        M(values){
+            const rl = 1, rSW = 0.4, vFD = 0.7, rc = 0.45
+            
+            let upper = 1 - ((vFD * Formulas.one_minus_D(values.D)) /  values.vIn)
+            let bottom = Formulas.one_minus_D(values.D) * (1 + (( rl + rSW * values.D) /  (values.R * Math.pow(Formulas.one_minus_D(values.D),2)) ) )
+    
+            let ans = upper / bottom
+            return Number(ans.toFixed(4))
+        },
+        i_In(values){
+            let ans = this.i0(values) / Formulas.one_minus_D(values.D)
             return Number(ans.toFixed(4))
         },
         i0(values){
             let ans = this.v0(values) / values.R
             return Number(ans.toFixed(4))
         },
-        M(values){
-            let ans = 1 / Formulas.one_minus_D(values.D)
-            return Number(ans.toFixed(4))
-        },
-        I_In(values){
-            let ans = this.M(values) * this.i0(values)
-            return Number(ans.toFixed(4))
-        },
-        i_L2(values){
+        i2(values){
             let L = 2 * Math.pow(10,-3)
             let fs = 50 * Math.pow(10,3)
 
             let upper = values.D * values.vIn
             let lower = 2 * L * fs
 
-            let ans = this.I_In(values) + (upper / lower)
+            let ans = this.i_In(values) + (upper / lower)
 
             return Number(ans.toFixed(4))
-        }
+        },
+        pSw(values){
+            let ans = this.v0(values) * this.i0(values)
+            return Number(ans.toFixed(4))
+        },
+        pDi(values){
+            let ans = this.v0(values) * this.i0(values)
+            return Number(ans.toFixed(4))
+        },
+        
     },
 }
 

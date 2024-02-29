@@ -6,95 +6,39 @@
     <title>Document</title>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
-    <style>
-      .welcome-box{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-      }
-      .welcome-box .title{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-top:  10px;
-        gap: 4px;
-      }
-      .welcome-box .iit-logo{
-        height: 120px;
-        width: 200px;
-      }
-      .welcome-box .prof-img{
-        height: 160px;
-      }
-      .welcome-box .title span{
-        font-size: 1.3rem;
-      }
-      .welcome-box .title span:nth-child(2n - 1){
-        color: red;
-      }
-      .welcome-box .title span:nth-child(2n){
-        font-weight: bold;
-        color: black;
-        font-family: Roboto;
-      }
-      .welcome-box .prof-description{
-        display: flex;
-        flex-direction: column;
-        align-items: end;
-        padding: 5px;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        border: 2px solid;
-        border-radius: 5px;
-        align-self: end;
-      }
-      #box{
-        position: absolute;
-        border: 1px solid;
-        background-color: red;
-
-      }
-      #stop{
-        position: absolute;
-        top: 550px
-      }
-      body{
-        background-color: black;
-      }
-    </style>
+    <link rel="stylesheet" href="sliders.css">
   </head>
   <body>
-    <div id="box">box</div>
-    <button id="stop">stop</button>
-    <script>
-      let o = anime({
-        easing: "easeInOutExpo",
-        targets: "#box",
-        keyframes: [
-          {left: 500},
-          {top: 500},
-          {left: 0},
-          {top: 0},
-        ],
-        loop: true
-      })
-      document.getElementById("stop").onclick = ()=>{
-        o.stop();
-      }
-    </script>
-    
-
-    <!-- <textarea id="text"></textarea>
-      <button id="speak-button">Speak</button>
-      <script>
-      let textArea = document.getElementById("text");
-      let speakButton = document.getElementById("speak-button");
-      speakButton.addEventListener("click", function () {
-        let text = textArea.value;
-        let utterance = new SpeechSynthesisUtterance();
-        utterance.text = text;
-        utterance.voice = window.speechSynthesis.getVoices()[0];
-        window.speechSynthesis.speak(utterance);
-      });
-    </script>  -->
+    <div class="universal-slider">
+      <img class="slider-circuit" src="./img/slider_circuit.png" alt="">
+      <div class="slider">
+        <img type="range" class="slider_V">
+        <div class="v">
+          <img src="./img/slider_V_back.png" alt="" class="meter">
+          <img src="./img/slider_V_arrow.png" class="slider-V-arrow slider-v-r1">
+          <div class="value-box">
+            <input type="text" value="24" min="24" max="72" readonly>
+            <span>V</span>
+          </div>
+        </div>
+        <div class="d">
+          <input type="range" class="slider_D range-slider" step="0.01" min="0.1" max="0.95" value="0.1">
+          <img src="./img/slider_D_blank.png" class="slider-D-arrow">
+          <div class="value-box">
+            <!-- <span>0</span> -->
+            <input type="text" value="0.1" min="0.1" max="0.95" onfocusout="">
+          </div>
+        </div>
+        <div class="r">
+          <input type="range" class="slider_R" step="1" min="50" max="500" value="50">
+          <img src="./img/slider_R_arrow.png" class="slider-R-arrow">
+          <div class="value-box">
+            <input type="text" value="50" min="50" max="500" onfocusout="">
+            <span>𝜴</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="sliders.js"></script>
   </body>
 </html>

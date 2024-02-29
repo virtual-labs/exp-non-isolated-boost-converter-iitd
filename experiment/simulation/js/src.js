@@ -160,6 +160,14 @@ formulas_procedure:this.allImgsDom[139],
 formulas_universal:this.allImgsDom[140],
 
 
+//EE2 imgs added
+part_3_option_select:this.allImgsDom[141],
+part_1_text_for_crrct:this.allImgsDom[142],
+part_1_text_for_wrong:this.allImgsDom[143],
+part_1_text_for_circuit_diagram:this.allImgsDom[144],
+
+
+
       // * Question Mark
       domQs1: this.allQsDom[0],
       domQs2: this.allQsDom[1],

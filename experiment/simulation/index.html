@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="./css/certificate.css" />
     <link rel="stylesheet" href="./css/chart.css" />
     <link rel="stylesheet" href="./css/component_styling.css" />
+    <link rel="stylesheet" href="./css/sliders.css" />
   </head>
   <img src="" alt="" />
   <body>
@@ -273,10 +274,10 @@
               </table>
 
               <!-- * Graphs -->
-              <div class="graph_box">
+              <div class="graph_box graph_box1">
                 <canvas class="graph graph1"></canvas>
               </div>
-              <div class="graph_box" >
+              <div class="graph_box graph_box2" >
                 <canvas class="graph graph2"></canvas>
               </div>
               <div class="graph_box" >
@@ -289,110 +290,210 @@
                 <canvas class="graph graph5"></canvas>
               </div>
               
+              <!-- ! for cicuit formulation -->
+              <!-- Connection Points -->
+              <div class="vertex-box">
+                <p class="vertex" id="vertex1"><span class="text">1</span></p>
+                <p class="vertex" id="vertex2"><span class="text">2</span></p>
+                <p class="vertex" id="vertex3"><span class="text">3</span></p>
+                <p class="vertex" id="vertex4"><span class="text">4</span></p>
+                <p class="vertex" id="vertex5"><span class="text">5</span></p>
+                <p class="vertex" id="vertex6"><span class="text">6</span></p>
+                <p class="vertex" id="vertex7"><span class="text">7</span></p>
+                <p class="vertex" id="vertex8"><span class="text">8</span></p>
+                <p class="vertex" id="vertex9"><span class="text">9</span></p>
+                <p class="vertex" id="vertex10"><span class="text">10</span></p>
+              </div>
+
               <!-- part 3 first table -->
-              <table class="part3_table_one">
-                <thead>
-                  <tr>
-                    <th>S.No.</th>
-                    <th>V<sub>in</sub>(V)</th>
-                    <th>D</th>
-                    <th>R</th>
-                    <th>V<sub>o</sub>(V)</th>
-                    <th>M</th>
-                    <th>I<sub>in</sub>(A)</th>
-                    <th>I<sub>o</sub>(A)</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>1</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td>2</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td>3</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td>4</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td>5</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td>6</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td>7</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                </tbody>
-              </table>
+              <div class="part3_table_one">
+                <table>
+                  <thead>
+                    <!-- slider -->
+                    <tr>
+                      <th colspan="3" class="table-title">
+                        V<sub>g</sub> = <span class="title">24</span> V
+                      </th>
+                    </tr>
+                    <tr>
+                      <th>D</th>
+                      <th>V<sub>0</sub>(V)</th>
+                      <th>M</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>0.1</td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>0.9</td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                  </tbody>
+                </table>
+                <table>
+                  <thead>
+                    <!-- slider -->
+                    <tr>
+                      <th colspan="3" class="table-title">
+                        V<sub>g</sub> = <span class="title">48</span> V
+                      </th>
+                    </tr>
+                    <tr>
+                      <th>D</th>
+                      <th>V<sub>0</sub>(V)</th>
+                      <th>M</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>0.1</td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>0.9</td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                  </tbody>
+                </table>
+                <table>
+                  <thead>
+                    <!-- slider -->
+                    <tr>
+                      <th colspan="3" class="table-title">
+                        V<sub>g</sub> = <span class="title">72</span> V
+                      </th>
+                    </tr>
+                    <tr>
+                      <th>D</th>
+                      <th>V<sub>0</sub>(V)</th>
+                      <th>M</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>0.1</td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>0.9</td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                  </tbody>
+                </table>
+
+              </div>
 
               <!-- part 3 second table -->
               <div class="part3_table_two">
                 <table>
                   <thead>
-                    <tr>
-                      <th colspan="2" >R1 (𝜴)</th>
-                    </tr>
-                    <tr>
-                      <td colspan="2" class="table-btn-box btn-box1">
-                        <button class="table-btn">5</button>
-                        <button class="table-btn">10</button>
-                        <button class="table-btn">15</button>
+                    <!-- slider -->
+                    <tr style="border: none;">
+                      <td colspan="3" style="border: none;">
+                        <div class="table-slider deactive">
+                          <div class="labels" style="gap: 30px;">
+                            <span>50𝜴</span>
+                            <span>60𝜴</span>
+                            <span>70𝜴</span>
+                          </div>
+                          <div class="lines">
+                            <span>▌</span>
+                            <span>▌</span>
+                            <span>▌</span>
+                          </div>
+                          <div class="table-slider-box">
+                            <p class="title">R<sub>1</sub></p>
+                            <input type="range" value="50" step="10" min="50" max="70">
+                          </div>
+                        </div>
                       </td>
                     </tr>
                     <tr>
                       <th>D</th>
+                      <th>V<sub>0</sub>(V)</th>
                       <th>M</th>
                     </tr>
                   </thead>
@@ -400,48 +501,67 @@
                     <tr>
                       <td>0.1</td>
                       <td></td>
+                      <td></td>
                     </tr>
                     <tr>
                       <td>0.5</td>
+                      <td></td>
                       <td></td>
                     </tr>
                     <tr>
                       <td>0.8</td>
                       <td></td>
-                    </tr>
-                    <tr>
-                      <td>0.83</td>
                       <td></td>
                     </tr>
                     <tr>
-                      <td>0.86</td>
+                      <td>0.84</td>
+                      <td></td>
                       <td></td>
                     </tr>
                     <tr>
-                      <td>0.89</td>
+                      <td>0.87</td>
+                      <td></td>
                       <td></td>
                     </tr>
                     <tr>
-                      <td>0.92</td>
+                      <td>0.9</td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>0.93</td>
+                      <td></td>
                       <td></td>
                     </tr>
                   </tbody>
                 </table>
                
-                <table >
+                <table>
+                  <!-- slider -->
                   <thead>
-                    <tr>
-                      <th colspan="2" >R2 (𝜴)</th>
-                    </tr>
-                    <tr>
-                      <td colspan="2" class="table-btn-box btn-box2 deactive">
-                        <button class="table-btn">40</button>
-                        <button class="table-btn">50</button>
-                        <button class="table-btn">60</button>
+                    <tr style="border: none;">
+                      <td colspan="3" style="border: none;">
+                        <div class="table-slider deactive" style="background-color: #009644;">
+                          <div class="labels">
+                            <span>130𝜴</span>
+                            <span>150𝜴</span>
+                            <span>170𝜴</span>
+                          </div>
+                          <div class="lines">
+                            <span>▌</span>
+                            <span>▌</span>
+                            <span>▌</span>
+                          </div>
+                          <div class="table-slider-box">
+                            <p class="title">R<sub>2</sub></p>
+                            <input type="range" value="130" step="20" min="130" max="170">
+                          </div>
+                        </div>
                       </td>
                     </tr>
                     <tr>
                       <th>D</th>
+                      <th>V<sub>0</sub>(V)</th>
                       <th>M</th>
                     </tr>
                   </thead>
@@ -449,48 +569,67 @@
                     <tr>
                       <td>0.1</td>
                       <td></td>
+                      <td></td>
                     </tr>
                     <tr>
                       <td>0.5</td>
+                      <td></td>
                       <td></td>
                     </tr>
                     <tr>
                       <td>0.8</td>
                       <td></td>
-                    </tr>
-                    <tr>
-                      <td>0.83</td>
                       <td></td>
                     </tr>
                     <tr>
-                      <td>0.86</td>
+                      <td>0.84</td>
+                      <td></td>
                       <td></td>
                     </tr>
                     <tr>
-                      <td>0.89</td>
+                      <td>0.87</td>
+                      <td></td>
                       <td></td>
                     </tr>
                     <tr>
-                      <td>0.92</td>
+                      <td>0.9</td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>0.93</td>
+                      <td></td>
                       <td></td>
                     </tr>
                   </tbody>
                 </table>
-                
-                <table >
+
+                <table>
                   <thead>
-                    <tr>
-                      <th colspan="2" >R3 (𝜴)</th>
-                    </tr>
-                    <tr>
-                      <td colspan="2" class="table-btn-box btn-box3 deactive">
-                        <button class="table-btn">300</button>
-                        <button class="table-btn">325</button>
-                        <button class="table-btn">350</button>
+                    <!-- slider -->
+                    <tr style="border: none;">
+                      <td colspan="3" style="border: none;">
+                        <div class="table-slider deactive" style="background-color: rgb(40, 40, 255);">
+                          <div class="labels">
+                            <span>275𝜴</span>
+                            <span>300𝜴</span>
+                            <span>325𝜴</span>
+                          </div>
+                          <div class="lines">
+                            <span>▌</span>
+                            <span>▌</span>
+                            <span>▌</span>
+                          </div>
+                          <div class="table-slider-box">
+                            <p class="title">R<sub>3</sub></p>
+                            <input type="range" value="275" step="25" min="275" max="325">
+                          </div>
+                        </div>
                       </td>
                     </tr>
                     <tr>
                       <th>D</th>
+                      <th>V<sub>0</sub>(V)</th>
                       <th>M</th>
                     </tr>
                   </thead>
@@ -498,29 +637,36 @@
                     <tr>
                       <td>0.1</td>
                       <td></td>
+                      <td></td>
                     </tr>
                     <tr>
                       <td>0.5</td>
+                      <td></td>
                       <td></td>
                     </tr>
                     <tr>
                       <td>0.8</td>
                       <td></td>
-                    </tr>
-                    <tr>
-                      <td>0.83</td>
                       <td></td>
                     </tr>
                     <tr>
-                      <td>0.86</td>
+                      <td>0.84</td>
+                      <td></td>
                       <td></td>
                     </tr>
                     <tr>
-                      <td>0.89</td>
+                      <td>0.87</td>
+                      <td></td>
                       <td></td>
                     </tr>
                     <tr>
-                      <td>0.92</td>
+                      <td>0.9</td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>0.93</td>
+                      <td></td>
                       <td></td>
                     </tr>
                   </tbody>
@@ -532,16 +678,16 @@
                 <thead>
                   <tr>
                     <th>S.No.</th>
-                    <th>V<sub>in</sub>(V)</th>
+                    <th>V<sub>g</sub>(V)</th>
                     <th>D</th>
-                    <th>R<sub>1</sub></th>
-                    <th>V<sub>o</sub>(V)</th>
+                    <th>R</th>
+                    <th>V<sub>0</sub>(V)</th>
                     <th>M</th>
                     <th>I<sub>in</sub>(A)</th>
-                    <th>I<sub>o</sub>(A)</th>
+                    <th>I<sub>0</sub>(A)</th>
                     <th>P<sub>in</sub>(W)</th>
-                    <th>P<sub>o</sub>(W)</th>
-                    <th>η %</th>
+                    <th>P<sub>0</sub>(W)</th>
+                    <th>η(%)</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -643,14 +789,13 @@
                <table class="part3_table_four">
                 <thead>
                   <tr>
-                    <th>v<sub>in</sub>(V)</th>
+                    <th>v<sub>g</sub>(V)</th>
                     <th>D</th>
                     <th>R</th>
-                    <th>v<sub>o</sub>(V)</th>
+                    <th>v<sub>0</sub>(V)</th>
                     <th>M</th>
-                    <th>I<sub>L2</sub>(A)</th>
-                    <th>I<sub>o</sub>(A)</th>
-                    
+                    <th>I<sub>2</sub>(A)</th>
+                    <th>I<sub>0</sub>(A)</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -674,23 +819,27 @@
                     <th>Component</th>
                     <th>Voltage Rating (V)</th>
                     <th>Current Rating (A)</th>
+                    <th>Power (W)</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <td>Switch(v<sub>S</sub>, i<sub>S</sub>)</td>
+                    <td>Switch(v<sub>Sw</sub>, i<sub>Sw</sub>)</td>
                     <td>> v<sub>0</sub> (value)</td>
-                    <td>> i<sub>L2</sub> (value)</td>
+                    <td>> i<sub>2</sub> (value)</td>
+                    <td>> P<sub>Sw</sub> (value)</td>
+
                   </tr>
                   <tr>
-                    <td>Diode(v<sub>D</sub>, i<sub>D</sub>)</td>
+                    <td>Diode(v<sub>Di</sub>, i<sub>Di</sub>)</td>
                     <td>> v<sub>0</sub> (value)</td>
-                    <td>> i<sub>L2</sub> (value)</td>
-                  </tr>
+                    <td>> i<sub>2</sub> (value)</td>
+                    <td>> P<sub>Di</sub> (value)</td>
+                  </tr> 
                   <tr>
                     <td>Capacitor(v<sub>C</sub>, i<sub>C</sub>)</td>
                     <td>> v<sub>0</sub> (value)</td>
-                    <td>> (i<sub>L2</sub>-i<sub>0</sub>) (value)</td>
+                    <td>> (i<sub>2</sub>-i<sub>0</sub>) (value)</td>
                   </tr>
                 </tbody>
               </table>
@@ -704,7 +853,7 @@
               </div>
                           
               <!-- * Input box format for in anime questions -->
-              <form onsubmit="return false" class="temp-input">
+              <form onsubmit="return false" class="temp-input"
                 <span class="text1"></span
                 ><input class="input" type="text" name="" id="ipnum" /><span
                   class="text2"
@@ -792,72 +941,66 @@
               </div>
 
               <!-- * Slider Box -->
-              <div class="slider-box" style="z-index: 1000">
-                <div class="slider slider_vIn">
-                  <span class="title">V<sub>in</sub></span>
-                  <div class="range-slider">
-                    <input
-                      class="range-slider__range"
-                      type="range"
-                      value="12"
-                      min="12"
-                      max="36"
-                      step="12"
-                    />
-                    <span class="range-slider__value">0</span>
-                    <span> V</span>
+              <!-- <div class="slider-box" style="z-index: 1000"> -->
+                <div class="universal-slider" style="z-index: 1000">
+                  <img class="slider-circuit" src="./src/images/sliders/slider_circuit.png" alt="">
+                  <div class="slider">
+                    <img type="range" class="slider_V">
+                    <div class="v">
+                      <img src="./src/images/sliders/slider_V_back.png" alt="" class="meter">
+                      <img src="./src/images/sliders/slider_V_arrow.png" class="slider-V-arrow slider-v-r1">
+                      <div class="value-box">
+                        <input type="text" value="24" min="24" max="72" readonly>
+                        <span>V</span>
+                      </div>
+                    </div>
+                    <div class="d">
+                      <input type="range" class="slider_D range-slider" step="0.01" min="0.1" max="0.95" value="0.1">
+                      <img src="./src/images/sliders/slider_D_blank.png" class="slider-D-arrow">
+                      <div class="value-box">
+                        <!-- <span>0</span> -->
+                        <input type="text" value="0.1" min="0.1" max="0.95" onfocusout="">
+                      </div>
+                    </div>
+                    <div class="r">
+                      <input type="range" class="slider_R" step="1" min="50" max="500" value="50">
+                      <img src="./src/images/sliders/slider_R_arrow.png" class="slider-R-arrow">
+                      <div class="value-box">
+                        <input type="text" value="500" min="50" max="500" onfocusout="">
+                        <span>𝜴</span>
+                      </div>
+                    </div>
                   </div>
                 </div>
-          
-                <div class="slider slider_D">
-                  <span class="title">D</span>
-                  <div class="range-slider">
-                    <input
-                      class="range-slider__range"
-                      type="range"
-                      value="0.1"
-                      min="0.1"
-                      max="0.95"
-                      step="0.01"
-                    />
-                    <span class="range-slider__value">0</span>
-                    <span></span>
-                  </div>
-                </div>
-          
-                <div class="slider slider_R">
-                  <span class="title">R</span>
-                  <div class="range-slider">
-                    <input
-                      class="range-slider__range"
-                      type="range"
-                      value="10"
-                      min="10"
-                      max="500"
-                    />
-                    <input
-                      value="10"
-                      type="input"
-                      class="range-slider__value resistance-input"
-                    />
-                    <span> Ω</span>
-                  </div>
-                </div>
-              </div>
+              <!-- </div> -->
 
               <!-- ! Delte Reset Buttons -->
+              <!-- * Button template -->
               <div class="btn btn-reset">
                 Reset                
               </div>
               <div class="btn btn-delete">
                 Delete
               </div>
+              <div class="btn btn-check-connections">
+                Check Connections
+              </div>
+              <div class="btn btn-circuit-diagram" style="z-index: 2001;">
+                Circuit Diagram
+              </div>
+              <div class="btn btn-connections" id="reset-connections" >
+                Reset                
+              </div>
+              
 
-              <!--! transparent html element  -->
+               <!--! transparent html element  -->
 
-              <button class="btn-transparent btn btn-deactive">
+               <button id="overPlayerNextBtn" class="btn-transparent btn btn-disabled" disabled>
                 Next
               </button>
+       
+              <!-- ! Conecpt Development -->
+              <iframe class="concept_development" src="./iframes/index.html" width="1200" height="700"  frameborder="0"></iframe>
 
               <!-- * Images that is used in all steps -->
               <!-- * class main-window-imgs -->
@@ -1734,7 +1877,24 @@ src="./src/images/run_btn.png"
     alt="formulas_universal.png"
 />
 
-
+<!-- EE2 Images adding -->
+<img
+class="main-window-imgs"
+src="./src/images/part_3_option_select.png"
+alt="part_3_option_select"
+/>
+<img
+        class="main-window-imgs"
+        src="./src/images/part_1_text_for_crrct.png"
+    />
+<img
+        class="main-window-imgs"
+        src="./src/images/part_1_text_for_wrong.png"
+    />
+<img
+        class="main-window-imgs"
+        src="./src/images/part_1_circuit_diagram.png"
+    />
 
 
               <!-- * Videos -->
@@ -1859,15 +2019,171 @@ src="./src/images/run_btn.png"
                 style="background-color: transparent; font-weight: bold"
                 class="temp temp-title21"
               ></span>
+              <span
+              style="background-color: transparent; font-weight: bold"
+              class="temp temp-title22"
+            ></span>
+            <span
+              style="background-color: transparent; font-weight: bold"
+              class="temp temp-title23"
+            ></span>
+            <span
+              style="background-color: transparent; font-weight: bold"
+              class="temp temp-title24"
+            ></span>
+            <span
+              style="background-color: transparent; font-weight: bold"
+              class="temp temp-title25"
+            ></span>
+            <span
+              style="background-color: transparent; font-weight: bold"
+              class="temp temp-title26"
+            ></span>
+            <span
+              style="background-color: transparent; font-weight: bold"
+              class="temp temp-title27"
+            ></span>
+            <span
+              style="background-color: transparent; font-weight: bold"
+              class="temp temp-title28"
+            ></span>
+            <span
+              style="background-color: transparent; font-weight: bold"
+              class="temp temp-title29"
+            ></span>
+            <span
+              style="background-color: transparent; font-weight: bold"
+              class="temp temp-title30"
+            ></span>
+            <span
+              style="background-color: transparent; font-weight: bold"
+              class="temp temp-title31"
+            ></span>
+            <span
+              style="background-color: transparent; font-weight: bold"
+              class="temp temp-title32"
+            ></span>
+            <span
+              style="background-color: transparent; font-weight: bold"
+              class="temp temp-title33"
+            ></span>
+            <span
+              style="background-color: transparent; font-weight: bold"
+              class="temp temp-title34"
+            ></span>
+            <span
+              style="background-color: transparent; font-weight: bold"
+              class="temp temp-title35"
+            ></span>
+            <span
+              style="background-color: transparent; font-weight: bold"
+              class="temp temp-title36"
+            ></span>
+            <span
+              style="background-color: transparent; font-weight: bold"
+              class="temp temp-title37"
+            ></span>
+            <span
+              style="background-color: transparent; font-weight: bold"
+              class="temp temp-title38"
+            ></span>
+            <span
+              style="background-color: transparent; font-weight: bold"
+              class="temp temp-title39"
+            ></span>
+            <span
+              style="background-color: transparent; font-weight: bold"
+              class="temp temp-title40"
+            ></span>
+            <span
+              style="background-color: transparent; font-weight: bold"
+              class="temp temp-title41"
+            ></span>
+            <span
+              style="background-color: transparent; font-weight: bold"
+              class="temp temp-title42"
+            ></span>
+            <span
+              style="background-color: transparent; font-weight: bold"
+              class="temp temp-title43"
+            ></span>
+            <span
+              style="background-color: transparent; font-weight: bold"
+              class="temp temp-title44"
+            ></span>
+            <span
+              style="background-color: transparent; font-weight: bold"
+              class="temp temp-title45"
+            ></span>
+            <span
+              style="background-color: transparent; font-weight: bold"
+              class="temp temp-title46"
+            ></span>
+            <span
+              style="background-color: transparent; font-weight: bold"
+              class="temp temp-title47"
+            ></span>
+            <span
+              style="background-color: transparent; font-weight: bold"
+              class="temp temp-title48"
+            ></span>
+            <span
+              style="background-color: transparent; font-weight: bold"
+              class="temp temp-title49"
+            ></span>
+            <span
+              style="background-color: transparent; font-weight: bold"
+              class="temp temp-title50"
+            ></span>
+            <span
+              style="background-color: transparent; font-weight: bold"
+              class="temp temp-title51"
+            ></span>
+            <span
+              style="background-color: transparent; font-weight: bold"
+              class="temp temp-title52"
+            ></span>
+            <span
+              style="background-color: transparent; font-weight: bold"
+              class="temp temp-title53"
+            ></span>
+            <span
+              style="background-color: transparent; font-weight: bold"
+              class="temp temp-title54"
+            ></span>
+            <span
+              style="background-color: transparent; font-weight: bold"
+              class="temp temp-title55"
+            ></span>
+            <span
+              style="background-color: transparent; font-weight: bold"
+              class="temp temp-title56"
+            ></span>
+            <span
+              style="background-color: transparent; font-weight: bold"
+              class="temp temp-title57"
+            ></span>
+            <span
+              style="background-color: transparent; font-weight: bold"
+              class="temp temp-title58"
+            ></span>
+            <span
+              style="background-color: transparent; font-weight: bold"
+              class="temp temp-title59"
+            ></span>
+            <span
+              style="background-color: transparent; font-weight: bold"
+              class="temp temp-title60"
+            ></span>
             </section>
 
             <!-- * Anime Footer -->
             <section class="anime-footer">
               <btn style="display: none;" class="btn btn-back">Back</btn>
               <!-- * Bottom Subtitles Div -->
-              <div style="margin-left: 10px;" class="steps-subtitle">
+              <div style="margin-left: 120px;" class="steps-subtitle">
                 <!-- <p class="user-name">Hey👋 Sneha</p> -->
-                <p style="text-align: center; font-size: 1.1em; " class="subtitle" id="subtitle"></p>
+                <p style="text-align: center; font-size: 1.3em; " class="subtitle" id="subtitle"></p>
               </div>
               <btn class="btn btn-next" >Next</btn>
               <btn
@@ -1886,6 +2202,9 @@ src="./src/images/run_btn.png"
     <script src="./js/progressBar.js"></script>
     <script src="./js/layout.js"></script>
     <script src="./js/formulas.js"></script>
+    <script src="./js/sliders.js"></script>
+    <script src="./js/jsplumb.js"></script>
+    <script src="./js/cables.js"></script>
     <script src="./js/main.js"></script>
   </body>
 </html>

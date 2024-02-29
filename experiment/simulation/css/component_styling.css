@@ -20,80 +20,82 @@
 }
 
 /* * Slider */
-.slider-box {
-    display: flex;
+.slider-box{
     /* display: none; */
     position: absolute;
-    top: 0;
-    left: 10px;
-    flex-direction: column;
-  }
-  .slider-box .slider {
-    margin: 5px;
-    border-radius: 10px;
-    display: flex;
-    font-family: "Times New Roman", Times, serif;
-    background-color: #7937aa;
-    width: 210px;
-    color: white;
-    font-weight: bolder;
-    padding: 10px;
+    top: -50px;
+    left: -50px;
+    /* user-select: none; */
+    pointer-events: none;
   }
 
-  .slider-box .range-slider {
-    /* display: grid; */
-    display: flex;
-
-    justify-content: center;
-    /* gap: 5px; */
-    align-items: center;
-    text-align: center;
-    justify-content: space-between;
-  }
-  .slider-box .title {
-    width: 23px;
-    /* text-align: center; */
-  }
-  .slider-box .resistance-input {
-    font-weight: bold;
-    width: 32px;
-  }
 
 /*  table styling */
 .part3_table_one{
     display: none;
-    border-collapse: collapse;
+    /* display: flex; */
+    flex-direction: row;
+    bottom: 0px;
     position: absolute;
-    bottom: 10px;
-    right: 20px;
+    text-align: center;
+    left: 30px;
+    gap: 20px;
 }
-.part3_table_one td,tr,th{
+.part3_table_one table{
+    height: 200px;
+    width: 180px;
+}
+.part3_table_one table thead tr th{
+    width: 70px;
+    padding: 5px;
+}
+.part3_table_one table tbody tr,td{
+    height: 10px!important;
+}
+.part3_table_one table{
+    border-collapse: collapse;
+}
+
+.part3_table_one td,tr,th,td{
+    font-size: 1.05em;
     border: 1px solid black;
+    font-weight: bold;
 }
-.part3_table_one thead{
+.part3_table_one table thead tr th{
+    background-color: #c55a11;
+}
+
+/* Color change different */
+.part3_table_one table th{
     background-color: #c55a11;
     color: white;
 }
-.part3_table_one thead tr th{
-    width: 85px;
-}
-.part3_table_one tbody tr{
-    height: 30px;
-}
-.part3_table_one td{
-    text-align: center;
-    font-weight: bold;
-}
-.part3_table_one td:nth-child(2){
+.part3_table_one table td:nth-child(1){
     background-color: #d9d9d9;
 }
-.part3_table_one td:nth-child(3){
-    background-color: #0000ff;
-    color: white;
+
+.part3_table_one table .table-title{
 }
-.part3_table_one td:nth-child(6){
-    background-color: #00b050;
-    color: white;
+.part3_table_one table:nth-child(1) .table-title{
+    background-color: red;
+    /* border: 5px ridge red; */
+    box-shadow: inset 2px 2px 5px 1px black;
+}
+.part3_table_one table:nth-child(2) .table-title{
+    background-color: #05bc57;
+    /* border: 5px ridge blue; */
+    box-shadow: inset 2px 2px 5px 1px black;
+}
+.part3_table_one table:nth-child(3) .table-title{
+    background-color: blue;
+    /* border: 5px ridge #05bc57; */
+    box-shadow: inset 2px 2px 5px 1px black;
+}
+
+
+.part3_table_one tbody tr td{
+    height: 24px!important;
+    width: 10px!important;
 }
 
 /* part3 second table */
@@ -102,16 +104,19 @@
     display: none;
     bottom: 0px;
     position: absolute;
-    right: 80px;
     text-align: center;
+    left: 30px;
     gap: 20px;
 }
+.part3_table_two table{
+    height: 200px;
+}
 .part3_table_two table thead tr th{
-    width: 85px;
+    width: 70px;
     padding: 5px;
 }
-.part3_table_one tbody tr{
-    height: 30px;
+.part3_table_two table tbody tr,td{
+    height: 10px!important;
 }
 .part3_table_two table{
     border-collapse: collapse;
@@ -125,43 +130,66 @@
 .part3_table_two table thead tr th{
     background-color: #c55a11;
 }
-.part3_table_two table thead > tr > th{
-    background-color: yellow;
-}
-.part3_table_two td:nth-child(1){
-    /* background-color: #00b050; */
-    /* color: white; */
-    
-}
-/* .part3_table_two td:nth-child(2){
-    background-color: #0000ff;
+
+/* Adding slider of table */
+.part3_table_two .table-slider{
+    position: relative;
+    z-index: 2000;
+    background-color: red;
     color: white;
-} */
+    border-radius: 10px;
+    border: 2px solid black;
+    box-shadow: 2px 2px 1px black;
+}
+.part3_table_two .table-slider .labels{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    position: absolute;
+    font-size: 15px;
+    top: 7px;
+    left: 49px;
+    color: white;
+    font-weight: bolder!important;
+}
+.part3_table_two .table-slider .lines{
+    display: flex;
+    position: absolute;
+    color: black;
+    font-weight: bolder;
+    font-size: 10px;
+    gap: 49px;
+    left: 63px;
+    top: 25px;
+}
+.part3_table_two .table-slider .table-slider-box{
+    display: flex;
+    justify-content: space-evenly;
+    height: 50px;
+    color: white;
+}
+.part3_table_two .table-slider .table-slider-box .title{
+    /* background-color: white;
+    color: red;
+    padding: 1px 4px;
+    border-radius: 5px; */
+    position: relative;
+    top: -3px;
+}
+.part3_table_two .table-slider .table-slider-box input[type=range]{
+    /* width: 180px; */
+    position: relative;
+    top: 13px;
+}
+
 
 /* Color change different */
-.part3_table_two table:nth-child(1) td:nth-child(2), .part3_table_two table:nth-child(1) th{
-    background-color: #0000ff;
+.part3_table_two table th{
+    background-color: #c55a11;
     color: white;
 }
-.part3_table_two table:nth-child(1) thead tr:nth-child(3) th{
-    background-color: gray;
-    color: white;
-}
-.part3_table_two table:nth-child(2) td:nth-child(2), .part3_table_two table:nth-child(2) th{
-    background-color: #ff0000;
-    color: white;
-}
-.part3_table_two table:nth-child(2) thead tr:nth-child(3) th{
-    background-color: gray;
-    color: white;
-}
-.part3_table_two table:nth-child(3) td:nth-child(2), .part3_table_two table:nth-child(3) th{
-    background-color: #00b050;
-    color: white;
-}
-.part3_table_two table:nth-child(3) thead tr:nth-child(3) th{
-    background-color: gray;
-    color: white;
+.part3_table_two table td:nth-child(1){
+    background-color: #d9d9d9;
 }
 
 /* part3  table */
@@ -200,6 +228,12 @@
 .part3_table_three td:nth-child(4){
     background-color: rgb(194, 194, 194);
 }
+.part3_table_three td:nth-child(10){
+    background-color: #ffff00;
+}
+.part3_table_three td:nth-child(11){
+    background-color: #ffc000;
+}
 /* table four */
 .part3_table_four{
     display: none;
@@ -214,7 +248,7 @@
     border: 1px solid black;
 }
 .part3_table_four thead{
-    background-color: #c55a11;
+    background-color: #0579cc;
     color: white;
 }
 .part3_table_four thead tr th{
@@ -242,7 +276,7 @@
     border: 1px solid black;
 }
 .part3_table_four_2 thead{
-    background-color: #c55a11;
+    background-color: #0579cc;
     color: white;
 }
 .part3_table_four_2 thead tr th{
@@ -253,20 +287,24 @@
 }
 .part3_table_four_2 td{
     text-align: center;
-    font-weight: bold;
+    font-weight: bolder;
 }
 
 .part3_table_four_2 tbody tr:nth-child(1){
-    color: blue!important;
+    color: #ff0505!important;
 }
 .part3_table_four_2 tbody tr:nth-child(2){
-    color: red!important;
+    color: #0909ff!important;
 }
 .part3_table_four_2 tbody tr:nth-child(3){
-    color: purple!important;
+    color: #05833d!important;
 }
 .deactive{
+    pointer-events: none;
+    cursor:not-allowed;
+    user-select: none;
     opacity: 0.5;
+    box-shadow: none!important;
 }
 
 .graph_box{
@@ -289,10 +327,10 @@
 /* ! Next Btn Deactive class */
 .btn-deactive{
     transition: 1s;
-    opacity: 0.7;
+    opacity: 0.7!important;
     cursor: not-allowed;
-    background-color: rgb(97, 97, 97);
-    box-shadow: 1px 1px 5px black;
+    background-color: rgb(97, 97, 97)!important;
+    box-shadow: none;
     color: black;
 }
 
@@ -364,6 +402,28 @@
     
 }
 
+/* ! check connection and circuit diagram btn */
+.btn-check-connections{
+    background-color: #d26315!important;
+    color: white;
+    font-weight: bold;
+    display: none;
+    z-index: 1000;
+    position: absolute;
+}
+
+.btn-circuit-diagram{
+    background-color: #7937aa;
+    color: white;
+    font-weight: bold;
+    display: none;
+    z-index: 1000;
+    position: absolute;
+}
+
+
+
+
 .bg-black{
     background-color: black!important;
 }
@@ -387,32 +447,39 @@
 }
 
 
-.btn-transparent{
-    display: none;
-    position: absolute;
-    width: 64px;
-    height: 44px;
-    bottom: -95px;
-    right: 3px;
-    /* background-color: red; */
-    z-index: 2001;
-}
 .btn-transparent {
-    display: none;
+    display: block;
     position: absolute;
-    /* width: 64px; */
-    /* height: 48px; */
+    width: 92px;
+    height: 35px;
     bottom: -95px;
-    right: 1px;
-    /* background-color: red; */
-    font-size: 1.2em;
-    z-index: 2001;
+    right: -3px;
+    border-radius: 8px;
+    font-weight: bolder;
+    z-index: 6000;
   }
   
   
   .btn-transparent:active {
     box-shadow: #422800 2px 2px 0 0;
     transform: translate(4px, 4px);
+  }
+
+  .btn-disabled{
+    color: gray;
+    box-shadow: none;
+    background-color: #f1f2f4;
+    user-select: none;
+    cursor: not-allowed;
+    /* pointer-events: none; */
+  }
+  .btn-disabled:active{
+    opacity: none!important;
+    transform: none!important;
+  }
+  .btn-disabled:hover{
+    border: none;
+    box-shadow: none;
   }
 
   /* Pop window */
@@ -426,7 +493,7 @@
     padding: 0 2px;
     height: 40px;
     border-radius: 10px;
-    z-index: 5000;
+    z-index: 10000;
   }
 
   .btn-popup{
@@ -478,3 +545,92 @@
     filter: blur(7px);
     -webkit-filter: blur(7px);
   }
+
+  /* vertex */
+  .vertex-box{
+    display: none;
+  }
+  .vertex-box .vertex{
+    /* display: none; */
+    position: absolute;
+    /* background-color: black;
+    width: 20px;
+    height: 20px;
+    z-index: 2000;
+    color: white;
+    border-radius: 100vh; */
+    /* left: 10px;
+    top: 20px; */
+  }
+
+  #vertex1{
+    left: 124px;
+    top: 23px;
+}
+  #vertex2{
+    left: 124px;
+    top: 162px;
+}
+#vertex3{
+    left: 165px;
+    top: 309px;
+}
+#vertex4{
+    left: 301px;
+    top: 308px;
+}
+#vertex5{
+    left: 684px;
+    top: 31px;
+}
+
+#vertex6  {
+    left: 682px;
+    top: 181px;
+}
+#vertex7 {
+    left: 427px;
+    top: -16px;
+}
+#vertex8  {
+    left: 573px;
+    top: -16px;
+}
+#vertex9  {
+    left: 437px;
+    top: 307px;
+}
+#vertex10 {
+    left: 542px;
+    top: 307px;
+}
+
+.vertex-box .text{
+    position: relative;
+    font-size: 20px;
+    font-weight: bolder;
+    left: -27px;
+    top: -10px;
+}
+
+.vertex-box #vertex3 .text,
+.vertex-box #vertex4 .text,
+.vertex-box #vertex7 .text,
+.vertex-box #vertex8 .text,
+.vertex-box #vertex9 .text,
+.vertex-box #vertex10 .text{
+    left: 0;
+    top: 20px
+}
+
+.concept_development{
+    display: none;
+}
+
+.btn-connections{
+    display: none;
+}
+
+#overPlayerNextBtn{
+    display: none;
+}
