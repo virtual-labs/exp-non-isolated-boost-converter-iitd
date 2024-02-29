@@ -269,23 +269,23 @@ Fig. 3. Current through various components.
     <td><img src="images/th20.png" height="60px"></td>
     <td><img src="images/th21.png" height="60px"></td>
     <td><img src="images/th22.png" height="60px"></td>
-    <td><img src="images/th22a.png" height="60px"></td>
+    <td><img src="images/th23a.png" height="35px"></td>
   </tr>
   <tr>
     <td>i<sub>C</sub></td>
-    <td>b</td>
-    <td>c</td>
-    <td>d</td>
-    <td>e</td>
-    <td>f</td>
+    <td><img src="images/th23b.png" height="35px"></td>
+    <td><img src="images/th23c.png" height="35px"></td>
+    <td><img src="images/th23.png" height="60px"></td>
+    <td><img src="images/th24.png" height="60px"></td>
+    <td>&#48;</td>
   </tr>
   <tr>
     <td>i<sub>Sw</sub></td>
-    <td>b</td>
-    <td>c</td>
-    <td>d</td>
-    <td>e</td>
-    <td>f</td>
+    <td><img src="images/th25.png" height="60px"></td>
+    <td><img src="images/th26.png" height="60px"></td>
+    <td>&#48;</td>
+    <td>&#48;</td>
+    <td><img src="images/th27.png" height="60px"></td>
   </tr>
   <tr>
     <td>i<sub>Di</sub></td>
