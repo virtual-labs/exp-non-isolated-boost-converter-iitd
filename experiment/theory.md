@@ -356,10 +356,6 @@ Fig. 3. Current through various components.
       </div>
 <br><br>
 
-<div style="float: left; width:100%;">
-  
-Therefore, the inductor ripple current is    
-</div>
 
 <div style="float: left; width:50%;">
   <img src="images/th37.png" height="80px">
@@ -456,8 +452,8 @@ Based on the operation of switch (Sw: ON/OFF-state) the operating principle of t
 
 <div style="float: left; width:100%;"><br>
 
-**a) Voltage conversion ratio or voltage gain (M)**
 Voltage across inductor L<br>
+
 **Mode – I :**
 </div>
 
