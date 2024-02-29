@@ -265,11 +265,11 @@ Fig. 3. Current through various components.
   </tr>
   <tr>
     <td>i<sub>L</sub></td>
-    <td>B</td>
-    <td>C</td>
-    <td>D</td>
-    <td>E</td>
-    <td>F</td>
+    <td><img src="images/th19.png" height="60px"></td>
+    <td><img src="images/th20.png" height="60px"></td>
+    <td><img src="images/th21.png" height="60px"></td>
+    <td><img src="images/th22.png" height="60px"></td>
+    <td><img src="images/th22a.png" height="60px"></td>
   </tr>
   <tr>
     <td>i<sub>C</sub></td>
