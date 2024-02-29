@@ -486,10 +486,10 @@ Voltage across inductor L<br>
 Applying volt-sec balance on inductor (eqn. 22 and 23)   
 </div>
 
-<div style="float: left; width:60%;"><br><br>
-  <img src="images/th46.png" height="48px">
+<div style="float: left; width:50%;"><br><br>
+  <img src="images/th46.png" >
       </div>
-<div style="float: right; width:40%; text-align:center;">
+<div style="float: right; width:50%; text-align:center;">
     ..(24)
       </div>
 
@@ -500,7 +500,7 @@ Therefore, voltage gain of non-ideal boost converter is
 
 
 <div style="float: left; width:50%;"><br>
-  <img src="images/th47.png" height="60px">
+  <img src="images/th47.png" height="170px">
       </div>
 <div style="float: right; width:50%; text-align:center;">
     ..(25)
