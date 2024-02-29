@@ -75,12 +75,12 @@
     },
             
     {
-      "question": "5. Voltage stress of switch (<sub>vSw</sub>) and diode (<sub>vDi</sub>) are :",
+      "question": "5. Voltage stress of switch (v<sub>Sw</sub>) and diode (v<sub>Di</sub>) are :",
       "answers": {
-        "a": "<sub>vSw</sub> = V<sub>0</sub> & <sub>vDi</sub> = V<sub>g</sub>",
-        "b": "<sub>vSw</sub> = V<sub>g</sub> & <sub>vDi</sub> = V<sub>g</sub>",
-        "c": "<sub>vSw</sub> = V<sub>g</sub> & <sub>vDi</sub> = V<sub>0</sub>",
-        "d": "<sub>vSw</sub> = V<sub>0</sub> & <sub>vDi</sub> = V<sub>0</sub>"
+        "a": "v<sub>Sw</sub> = V<sub>0</sub> & v<sub>Di</sub> = V<sub>g</sub>",
+        "b": "v<sub>Sw</sub> = V<sub>g</sub> & v<sub>Di</sub> = V<sub>g</sub>",
+        "c": "v<sub>Sw</sub> = V<sub>g</sub> & v<sub>Di</sub> = V<sub>0</sub>",
+        "d": "v<sub>Sw</sub> = V<sub>0</sub> & v<sub>Di</sub> = V<sub>0</sub>"
       },
       "explanations": {
         "a": "Explanation 1  <a href='www.google.com'>here</a>",
