@@ -462,37 +462,57 @@ Voltage across inductor L
 **Mode – I :**
 <br>
 <div style="float: left; width:50%;">
-  <img src="images/th4.png" height="25px">
+  <img src="images/th38.png" height="25px">
 </div>
 <div style="float: right; width:50%; text-align:center;">
-    ..(1)
+    ..(22)
 </div>
 <br><br>
 
 **Mode – II :**
 <br>
 <div style="float: left; width:50%;">
-  <img src="images/th5.png" height="25px">
+  <img src="images/th39.png" height="25px">
       </div>
 <div style="float: right; width:50%; text-align:center;">
-    ..(2)
+    ..(23)
       </div>     
 <br><br>
 
 Applying volt-sec balance on inductor (eqn. 1 and 2)
 <br>
+<br><br>
+
+<div style="float: left; width:100%;">
+  
+Power loss in Diode:   
+</div>
+
+<div style="float: left; width:50%;">
+  <img src="images/th40.png" height="60px">
+      </div>
+<div style="float: right; width:50%; text-align:center;">
+    ..(24)
+      </div>
+
+<div style="float: left; width:100%;"><br>
+     
+Total power loss:
+</div>
+
+<br>
+<div style="float: left; width:50%;">
+  <img src="images/th45.png" height="60px">
+      </div>
+<div style="float: right; width:50%; text-align:center;">
+    ..(25)
+      </div>
+<br><br>
 
       
 <br><br>==================================<br><br>
 <div style="float: left; width:100%;">
 <br>
-~In the event of battery voltage/load fluctuations, load voltage varies. However, DC-loads require constant voltage for their feasible/efficient operation, which demands automatic control. A simple PI-controller (proportional plus integral controller [2], see Fig. 5(a)) is capable of maintaining a constant load voltage despite the fluctuations (battery voltage/load). Here, the controller adjusts the pulse width of the PWM signal [2] according to the input error signal. As shown in Fig. 5(b), the error signal is the difference between the reference voltage and actual load voltage.~
-</div>
 
-<br>
-
-<center>
-  
-<img src="images/th14.png" height="50px">
 
 </center>
