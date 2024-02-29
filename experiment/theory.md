@@ -340,6 +340,149 @@ Fig. 3. Current through various components.
   </tr>
 </table>
 
+<br>
+<div style="float: left; width:100%;"><br>
+
+**g) Efficiency analysis:**     
+
+</div>
+
+<br>
+<div style="float: left; width:50%;">
+  <img src="images/th36.png" height="60px">
+      </div>
+<div style="float: right; width:50%; text-align:center;">
+    ..(15)
+      </div>
+<br><br>
+
+<div style="float: left; width:100%;">
+  
+Therefore, the inductor ripple current is    
+</div>
+
+<div style="float: left; width:50%;">
+  <img src="images/th37.png" height="60px">
+      </div>
+<div style="float: right; width:50%; text-align:center;">
+    ..(16)
+      </div>
+
+<div style="float: left; width:100%;"><br>
+     
+The power loss occurring in various components are given below.<br>
+Power loss in inductor:
+</div>
+
+<br>
+<div style="float: left; width:50%;">
+  <img src="images/th36.png" height="60px">
+      </div>
+<div style="float: right; width:50%; text-align:center;">
+    ..(17)
+      </div>
+<br><br>
+
+<div style="float: left; width:100%;">
+  
+Power loss in capacitor:    
+</div>
+
+<div style="float: left; width:50%;">
+  <img src="images/th37.png" height="60px">
+      </div>
+<div style="float: right; width:50%; text-align:center;">
+    ..(18)
+      </div>
+
+<div style="float: left; width:100%;"><br>
+
+Power loss in switch:
+</div>
+
+<br>
+<div style="float: left; width:50%;">
+  <img src="images/th36.png" height="60px">
+      </div>
+<div style="float: right; width:50%; text-align:center;">
+    ..(19)
+      </div>
+<br><br>
+
+<div style="float: left; width:100%;">
+  
+Power loss in Diode:   
+</div>
+
+<div style="float: left; width:50%;">
+  <img src="images/th37.png" height="60px">
+      </div>
+<div style="float: right; width:50%; text-align:center;">
+    ..(20)
+      </div>
+
+<div style="float: left; width:100%;"><br>
+     
+Total power loss:
+</div>
+
+<br>
+<div style="float: left; width:50%;">
+  <img src="images/th36.png" height="60px">
+      </div>
+<div style="float: right; width:50%; text-align:center;">
+    ..(21)
+      </div>
+<br><br>
+
+<br>
+<div style="float: left; width:100%;"><br>
+
+**h) Effect of non-idealities on voltage gain expression:**     
+
+</div>
+
+<br><br>
+
+<center>
+  <img src="images/th37.png" height="350px">
+  
+Fig. 4.  Circuit configuration of conventional boost converter with non-idealities.
+
+</center>
+<br>
+Based on the operation of switch (Sw: ON/OFF-state) the operating principle of the converter is explained below briefly. 
+<br><br>
+
+
+**a) Voltage conversion ratio or voltage gain (M)**
+
+Voltage across inductor L
+
+**Mode – I :**
+<br>
+<div style="float: left; width:50%;">
+  <img src="images/th4.png" height="25px">
+</div>
+<div style="float: right; width:50%; text-align:center;">
+    ..(1)
+</div>
+<br><br>
+
+**Mode – II :**
+<br>
+<div style="float: left; width:50%;">
+  <img src="images/th5.png" height="25px">
+      </div>
+<div style="float: right; width:50%; text-align:center;">
+    ..(2)
+      </div>     
+<br><br>
+
+Applying volt-sec balance on inductor (eqn. 1 and 2)
+<br>
+
+      
 <br><br>==================================<br><br>
 <div style="float: left; width:100%;">
 <br>
@@ -350,6 +493,6 @@ Fig. 3. Current through various components.
 
 <center>
   
-<img src="images/th14.png" height="500px">
+<img src="images/th14.png" height="50px">
 
 </center>
