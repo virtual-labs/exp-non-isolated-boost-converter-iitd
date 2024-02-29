@@ -483,10 +483,10 @@ Voltage across inductor L<br>
 
 <div style="float: left; width:100%;"><br><br>
   
-Applying volt-sec balance on inductor (eqn. 22 and 23)   
+Applying volt-sec balance on inductor (eqn. 22 and 23) <br><br>  
 </div>
 
-<div style="float: left; width:50%;"><br><br>
+<div style="float: left; width:50%;">
   <img src="images/th46.png" >
       </div>
 <div style="float: right; width:50%; text-align:center;">
