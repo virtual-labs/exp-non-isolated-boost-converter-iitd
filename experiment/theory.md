@@ -465,29 +465,25 @@ Voltage across inductor L<br>
     ..(22)
 </div>
 <br><br>
-<div style="float: left; width:100%;"><br>
+<div style="float: left; width:100%;">
      
 **Mode – II :**
 </div>
 
 <br>
 <div style="float: left; width:50%;">
-  <img src="images/th45.png" height="25px">
+  <img src="images/th45.png" height="60px">
       </div>
 <div style="float: right; width:50%; text-align:center;">
     ..(23)
       </div>     
 <br><br>
 
-Applying volt-sec balance on inductor (eqn. 1 and 2)
-<br>
-<br><br>
-
 <div style="float: left; width:100%;">
   
-Power loss in Diode:   
+Applying volt-sec balance on inductor (eqn. 22 and 23)   
 </div>
-
+<br><br>
 <div style="float: left; width:50%;">
   <img src="images/th46.png" height="60px">
       </div>
@@ -497,7 +493,7 @@ Power loss in Diode:
 
 <div style="float: left; width:100%;"><br>
      
-Total power loss:
+Therefore, voltage gain of non-ideal boost converter is
 </div>
 
 <br>
