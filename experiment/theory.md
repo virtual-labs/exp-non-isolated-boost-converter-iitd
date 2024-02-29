@@ -354,8 +354,10 @@ Fig. 3. Current through various components.
 <div style="float: right; width:50%; text-align:center;">
     ..(15)
       </div>
-<br><br>
 
+<div style="float: left; width:100%;">
+<br><br>    
+</div>
 
 <div style="float: left; width:50%;">
   <img src="images/th37.png" height="80px">
@@ -364,9 +366,9 @@ Fig. 3. Current through various components.
     ..(16)
       </div>
 
-<div style="float: left; width:100%;"><br>
+<div style="float: left; width:100%;"><br><br>
      
-The power loss occurring in various components are given below.<br>
+The power loss occurring in various components are given below.<br><br>
 Power loss in inductor:
 </div>
 
@@ -450,7 +452,7 @@ Fig. 4.  Circuit configuration of conventional boost converter with non-idealiti
 Based on the operation of switch (Sw: ON/OFF-state) the operating principle of the converter is explained below briefly. 
 <br><br>
 
-<div style="float: left; width:100%;"><br>
+<div style="float: left; width:100%;"><br><br>
 
 Voltage across inductor L<br>
 
@@ -477,14 +479,14 @@ Voltage across inductor L<br>
 <div style="float: right; width:50%; text-align:center;">
     ..(23)
       </div>     
-<br><br>
 
-<div style="float: left; width:100%;">
+
+<div style="float: left; width:100%;"><br><br>
   
 Applying volt-sec balance on inductor (eqn. 22 and 23)   
 </div>
-<br><br>
-<div style="float: left; width:50%;">
+
+<div style="float: left; width:50%;"><br><br>
   <img src="images/th46.png" height="60px">
       </div>
 <div style="float: right; width:50%; text-align:center;">
@@ -496,8 +498,8 @@ Applying volt-sec balance on inductor (eqn. 22 and 23)
 Therefore, voltage gain of non-ideal boost converter is
 </div>
 
-<br>
-<div style="float: left; width:50%;">
+
+<div style="float: left; width:50%;"><br>
   <img src="images/th47.png" height="60px">
       </div>
 <div style="float: right; width:50%; text-align:center;">
