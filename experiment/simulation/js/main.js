@@ -262,6 +262,11 @@ function toggleNextBtn(){
   let nextBtn = document.querySelector(".btn-next")
   nextBtn.classList.toggle("btn-deactive")
 }
+const cancelSpeech = ()=>{
+  window.speechSynthesis.cancel()
+  ccQueue = []
+}
+
 const setIsProcessRunning = (value) => {
   // calling toggle the next
   if(value != isRunning){
@@ -270,6 +275,7 @@ const setIsProcessRunning = (value) => {
 
   isRunning = value;
   if(value){
+    cancelSpeech()
     Dom.hideAll()
   }
 };
@@ -324,13 +330,16 @@ let student_name = "";
 const 
 
 
-textToSpeach = (text) => {
-  // if(isMute){
-  //   return;
-  // }
+textToSpeach = (text,speak=true) => {
+  // for filter <sub></sub>
+  text = text.replaceAll("<sub>"," ").replaceAll("</sub>"," ")
   let utterance = new SpeechSynthesisUtterance();
   utterance.text = text;
   utterance.voice = window.speechSynthesis.getVoices()[0];
+  if(isMute || !speak){
+    utterance.volume = 0
+    utterance.rate = 10
+  }
   window.speechSynthesis.speak(utterance);
   return utterance;
 };
@@ -339,7 +348,7 @@ textToSpeach = (text) => {
 let ccQueue = [];
 // for subtitile
 let ccObj = null;
-function setCC(text = null, speed = 25) {
+function setCC(text = null, speed = 25, speak = true) {
   if (ccObj != null) {
     ccObj.destroy();
   }
@@ -350,16 +359,15 @@ function setCC(text = null, speed = 25) {
     strings: ["", ...ccQueue],
     typeSpeed: speed,
     onStringTyped(){
-      ccQueue.shift();
+      ccQueue.shift()
       // if(ccQueue.length != 0){
-      //   setCC(ccQueue.shift())
+      //   setCC(ccQueue.shift())`
       // }
     }
   });
-  if (!isMute) textToSpeach(text);
-  return ccDom;
-}
-   
+  let utterance = textToSpeach(text,speak)
+  return utterance
+} 
 class Dom {
   constructor(selector) {
     this.item = null;
@@ -723,6 +731,7 @@ graph2: new Dom(".graph2"),
 graph3: new Dom(".graph3"),
 graph4: new Dom(".graph4"),
 graph5: new Dom(".graph5"),
+graph6: new Dom(".graph6"),
 graph1_arrow : new Dom("graph1_arrow"),
 graph2_arrow : new Dom("graph2_arrow"),
 part_2_graph_empty : new Dom("part_2_graph_empty"),
@@ -838,8 +847,35 @@ part_1_text_for_crrct: new Dom("part_1_text_for_crrct"),
 part_1_text_for_wrong: new Dom("part_1_text_for_wrong"),
 btn_reset_connections: new Dom(".btn-connections"),
 part_1_text_for_circuit_diagram: new Dom("part_1_text_for_circuit_diagram"),
+part_1_text: new Dom("part_1_text"),
+btn_hint: new Dom("btn_hint"),
+hint_box: new Dom("hint_box"),
 
-concept_development: new Dom(".concept_development"), 
+concept_development: new Dom(".concept_development"),
+
+    //experimental section images added
+    //! new
+    beta_line_blinking: new Dom("beta_line_blinking"),
+    bnt_click: new Dom("bnt_click"),
+    btn_firing_angle: new Dom("btn_firing_angle"),
+    btn_input_voltage: new Dom("btn_input_voltage"),
+    btn_load_inductance: new Dom("btn_load_inductance"),
+    btn_load_resistance: new Dom("btn_load_resistance"),
+    components_rl_load: new Dom("components_rl_load"),
+    components_r_load: new Dom("components_r_load"),
+    rl_load_click_1: new Dom("rl_load_click_1"),
+    rl_load_click_2: new Dom("rl_load_click_2"),
+    rl_load_click_3: new Dom("rl_load_click_3"),
+    rl_load_click_4: new Dom("rl_load_click_4"),
+    r_load_click_1: new Dom("r_load_click_1"),
+    r_load_click_2: new Dom("r_load_click_2"),
+    r_load_click_3: new Dom("r_load_click_3"),
+    r_load_click_4: new Dom("r_load_click_4"),
+    val_a: new Dom("val_a"),
+    val_l: new Dom("val_l"),
+    val_r: new Dom("val_r"),
+    val_v: new Dom("val_v"),
+    circle: new Dom("circle"),
         
 
 // ! new items dom
@@ -855,6 +891,7 @@ concept_development: new Dom(".concept_development"),
   graph1: null,
   graph2: null,
   graph5: null,
+  graph6: null,
  }
 
 
@@ -976,42 +1013,42 @@ concept_development: new Dom(".concept_development"),
           });
       };
       return true;
-      }),
-      (objective = function () {
-        setIsProcessRunning(true);
-        Dom.hideAll()
-        // require
-        Scenes.items.slider_box.hide()
-        
-        let btn_transparent = Scenes.items.btn_transparent.set().item;
-  
-        Scenes.items.concept_development.set().styles({
-          zIndex: "5000",
-          scale: "1 0.915",
-          top: "-144px",
-          position: "absolute",
-        })
-  
-        // ! Slide ended enable the button next button
-        function checkIsSlideEnded(){
-          let isSlideEnded = localStorage.getItem("isSlideEnded")
-          if(isSlideEnded=="true"){
-            btn_transparent.disabled = false
-            setIsProcessRunning(false)
-            btn_transparent.classList.remove("btn-disabled")
-            // setCC("Click next to goto next slide.")
-            Dom.setBlinkArrowRed(true, 866, 420,30,null,-90).play();
-            btn_transparent.onclick = ()=>{
-              Scenes.next()
-              localStorage.setItem("isSlideEnded",false)
-              window.clearInterval(interval)
-            }
+    }),
+    (objective = function () {
+      setIsProcessRunning(true);
+      Dom.hideAll()
+      // require
+      Scenes.items.slider_box.hide()
+      
+      let btn_transparent = Scenes.items.btn_transparent.set().item;
+
+      Scenes.items.concept_development.set().styles({
+        zIndex: "5000",
+        scale: "1 0.915",
+        top: "-144px",
+        position: "absolute",
+      })
+
+      // ! Slide ended enable the button next button
+      function checkIsSlideEnded(){
+        let isSlideEnded = localStorage.getItem("isSlideEnded")
+        if(isSlideEnded=="true"){
+          btn_transparent.disabled = false
+          setIsProcessRunning(false)
+          btn_transparent.classList.remove("btn-disabled")
+          // setCC("Click next to goto next slide.")
+          Dom.setBlinkArrowRed(true, 866, 420,30,null,-90).play();
+          btn_transparent.onclick = ()=>{
+            Scenes.next()
+            localStorage.setItem("isSlideEnded",false)
+            window.clearInterval(interval)
           }
         }
-        var interval = window.setInterval(checkIsSlideEnded, 1000)
-          
-        return true;
-      }),    
+      }
+      var interval = window.setInterval(checkIsSlideEnded, 1000)
+        
+      return true;
+    }),    
     (step1 = function () {
       setIsProcessRunning(true);
       // to hide previous step
@@ -1048,6 +1085,27 @@ concept_development: new Dom(".concept_development"),
       Scenes.items.part_1_text_for_crrct.set(585,340, 40).hide()
       Scenes.items.part_1_text_for_wrong.set(630,310, 110).hide()
       Scenes.items.part_1_text_for_circuit_diagram.set(0,0).zIndex(2000).hide()
+      Scenes.items.part_1_text.set(625, -68, 92)
+
+
+      anime({
+        targets: Scenes.items.part_1_text.item,
+        scale: [1, 1.1],
+        easing: "linear",
+        loop: true
+      })
+
+      //! hint button code
+      Scenes.items.btn_hint.set(808 + 68, 4 + 36, 36).zIndex(10)
+      Scenes.items.hint_box.set(188 + 68, 52, 322).zIndex(10000).hide()
+
+      let hint_btn = Scenes.items.btn_hint;
+      hint_btn.item.onmouseenter = ()=>{
+        Scenes.items.hint_box.show()
+      }
+      hint_btn.item.onmouseout = ()=>{
+        Scenes.items.hint_box.hide()
+      }
 
       function isConnectionsRight(connections){
         let target = null
@@ -1353,7 +1411,9 @@ concept_development: new Dom(".concept_development"),
       }
 
       // calling cable function
-      cable()
+      // setTimeout(() => {
+        cable()
+      // }, 3300);
       
       // ------ end
 
@@ -1546,6 +1606,11 @@ concept_development: new Dom(".concept_development"),
         .add({
           begin(){
             Dom.setBlinkArrowRed(true,405,-12,30,30,90).play()
+          },
+          complete(){
+            // completed
+            setIsProcessRunning(false);
+            Dom.setBlinkArrowRed(-1)
           }
         })
       }
@@ -1674,8 +1739,6 @@ concept_development: new Dom(".concept_development"),
 
           
         }
-        // completed
-        setIsProcessRunning(false);
       };
       
 
@@ -1684,11 +1747,11 @@ concept_development: new Dom(".concept_development"),
     }),
     (step3 = function () {
       setIsProcessRunning(true);
-      Scenes.items.btn_next.show()
       
       // todo all previous elements hide
       Dom.hideAll();
       Scenes.items.contentAdderBox.item.innerHTML = ""
+      Scenes.items.btn_next.show()
 
       Scenes.setStepHeading("Step-3", "Performance Analysis.");
       setCC("Click on the 'ICON' to plot the performance characteristics.")
@@ -1754,6 +1817,7 @@ concept_development: new Dom(".concept_development"),
 
         Scenes.optionsDone[0]=1;
         Scenes.forMathematicalExpressionBtn = 1
+        Scenes.currentStep = 7
         Scenes.steps[0+5]()
       }
       const opTwo = ()=>{
@@ -1761,6 +1825,7 @@ concept_development: new Dom(".concept_development"),
 
         Scenes.optionsDone[1]=1;
         Scenes.forMathematicalExpressionBtn = 2
+        Scenes.currentStep = 8
         Scenes.steps[1+5]()
       }
       const opThree = ()=>{
@@ -1768,6 +1833,7 @@ concept_development: new Dom(".concept_development"),
 
         Scenes.optionsDone[2]=1;
         Scenes.forMathematicalExpressionBtn = 3
+        Scenes.currentStep = 9
         Scenes.steps[2+5]()
       }
       const opFour = ()=>{
@@ -1775,6 +1841,7 @@ concept_development: new Dom(".concept_development"),
 
         Scenes.optionsDone[3]=1;
         Scenes.forMathematicalExpressionBtn = 4
+        Scenes.currentStep = 10
         Scenes.steps[3+5]()
       }
       options[0].item.onclick = opOne
@@ -1800,9 +1867,10 @@ concept_development: new Dom(".concept_development"),
 
       if(exit){
         // after complete
-        // Dom.setBlinkArrow(true, 790, 408).play();
-        setCC("Simulator Done");
+        Dom.setBlinkArrow(true, 790, 414).play();
+        setCC("Click 'Next' to go to next step");
         setIsProcessRunning(false);
+        Scenes.currentStep = 8
       }
 
       return true;
@@ -3102,22 +3170,31 @@ concept_development: new Dom(".concept_development"),
         width: "80px",
         rotate: "-90deg"
       }
-      Scenes.items.tempTitle1.set(548,25).zIndex(4000).setContent("Switch").styles(styles)
-      Scenes.items.tempTitle2.set(548,150).zIndex(4000).setContent("Diode").styles(styles)
-      Scenes.items.tempTitle3.set(548,290).zIndex(4000).setContent("Capacitor").styles(styles)
+      // Scenes.items.tempTitle1.set(548,25).zIndex(4000).setContent("Switch").styles(styles)
+      // Scenes.items.tempTitle2.set(548,150).zIndex(4000).setContent("Diode").styles(styles)
+      // Scenes.items.tempTitle3.set(548,290).zIndex(4000).setContent("Capacitor").styles(styles)
        let graph_box5 = new Dom(".graph_box5")
+       let graph_box6 = new Dom(".graph_box6")
        // ! graph
       // Scenes.items.graph4.set(null,null,190,290)
-      Scenes.items.graph5.set(null,0,390,320).styles({marginLeft: "15px"})
-      graph_box5.set(575,-70,475,365)
+      let graph_h = 230
+      let graph_w = 320
+      Scenes.items.graph5.set(null,0,graph_h,320).styles({marginLeft: "15px"})
+      Scenes.items.graph6.set(null,180,graph_h,320).styles({marginLeft: "15px"})
+      
+      graph_box5.set(575,-70,graph_h,365)
+      graph_box6.set(575,180,graph_h,365)
       let table = Scenes.items.part3_table_four.item
 
       let ctx2 = Scenes.items.graph5.item
       let chart2 = Scenes.items.chart.graph5
       
+      let ctx3 = Scenes.items.graph6.item
+      let chart3 = Scenes.items.chart.graph6
+      
       function plotGraph(){
         let data = {
-          labels: ['Switch', 'Diode', 'Capacitor'],
+          labels: ['Sw', 'Di', 'C'],
           datasets: [
               {
                   label: 'Voltage Stress',
@@ -3126,13 +3203,13 @@ concept_development: new Dom(".concept_development"),
                   borderWidth: 1,
                   data: []
               },
-              {
-                  label: 'Current Stress',
-                  backgroundColor: 'rgba(0, 0, 255, 1)',
-                  borderColor: 'rgba(0, 0, 255, 1)',
-                  borderWidth: 1,
-                  data: []
-              },
+              // {
+              //     label: 'Current Stress',
+              //     backgroundColor: 'rgba(0, 0, 255, 1)',
+              //     borderColor: 'rgba(0, 0, 255, 1)',
+              //     borderWidth: 1,
+              //     data: []
+              // },
               {
                   label: 'Power',
                   backgroundColor: 'rgba(0, 128, 0, 1)',
@@ -3156,10 +3233,10 @@ concept_development: new Dom(".concept_development"),
               }],
               yAxes: [{
                   ticks: {
-                      display: false,
-                      // fontSize: 17,
-                      // fontWeight: 'bold',
-                      // fontColor: 'black',
+                      display: true,
+                      fontSize: 17,
+                      fontWeight: 'bold',
+                      fontColor: 'black',
                       // beginAtZero: true,
                       // autoSkip: false,
                       // position: "right",
@@ -3179,8 +3256,61 @@ concept_development: new Dom(".concept_development"),
           options: options
       });
       Scenes.items.chart.graph5 = chart2
-      Scenes.items.graph5.set(0,0,475,345)
+      Scenes.items.graph5.set(0,0,graph_h,345)
     }
+      function plotGraph2(){
+        let data = {
+          labels: ['Sw', 'Di', 'C'],
+          datasets: [
+              {
+                  label: 'Current Stress',
+                  backgroundColor: 'rgba(0, 0, 255, 1)',
+                  borderColor: 'rgba(0, 0, 255, 1)',
+                  borderWidth: 1,
+                  data: []
+              },
+          ]
+      };
+
+      let options = {
+          maintainAspectRatio: false,
+          scales: {
+              xAxes: [{
+                  ticks: {
+                      fontSize: 17,
+                      fontWeight: 'bold',
+                      fontColor: 'black',
+                      beginAtZero: true
+                  }
+              }],
+              yAxes: [{
+                  ticks: {
+                      display: true,
+                      fontSize: 17,
+                      fontWeight: 'bold',
+                      fontColor: 'black',
+                      // beginAtZero: true,
+                      // autoSkip: false,
+                      // position: "right",
+                      // maxRotation: 90, // Rotate labels to 90 degrees
+                      // minRotation: 90,
+                      // callback: function(value) {
+                      //   return value // You can add custom formatting here if needed
+                      // }
+                  }
+              }]
+          }
+      };
+
+      chart3 = new Chart(ctx3, {
+          type: 'horizontalBar',
+          data: data,
+          options: options
+      });
+      Scenes.items.chart.graph6 = chart3
+      Scenes.items.graph6.set(0,0,graph_h,345)
+    }
+    
 
       // let slidersBox = document.querySelectorAll(".slider")
       let slidersBox = document.querySelectorAll(".range-slider__range")
@@ -3239,10 +3369,12 @@ concept_development: new Dom(".concept_development"),
        // ! ------------> If data already present plot the graph
         if(table.tBodies[0].rows[0].cells[6].innerHTML !== ""){
           setIsProcessRunning(false)
-          Scenes.items.graph5.set(0,0,475,345)
+          Scenes.items.graph5.set(0,0,graph_h,345)
+          Scenes.items.graph6.set(0,0,graph_h,345)
           Scenes.currentStep = 4
         }else{
           plotGraph()
+          plotGraph2()
         }   
 
        
@@ -3293,9 +3425,10 @@ concept_development: new Dom(".concept_development"),
         // ! destroy and show new graph
         // plotGraph()
         graph.addData(chart2,0,graph2_voltageStress)
-        graph.addData(chart2,1,graph2_currentStress)
-        graph.addData(chart2,2,graph2_power)
-          // after complete
+        graph.addData(chart2,1,graph2_power)
+
+        graph.addData(chart3,0,graph2_currentStress)
+        // after complete
           Dom.setBlinkArrow(true, 790, 408).play();
           // setCC("Click 'Next' to go to next step");
           setIsProcessRunning(false); 
@@ -3312,33 +3445,249 @@ concept_development: new Dom(".concept_development"),
 
       
       return true
+      
     }),
-    // (completed = function () {
-    //   Dom.hideAll();
-    //   Scenes.items.contentAdderBox.setContent("");
 
-    //   // get(".btn-save").style.display = "block";
-    //   Scenes.items.btn_save.show().push();
-    //   Dom.setBlinkArrow(-1);
-    //   setCC("Download it and share with your friends.");
-    //   // certificate name
-    //   let certificateStuName = get("#certificateStuName");
-    //   certificateStuName.innerHTML = student_name;
-    //   // get("#quizScore").innerHTML = Quiz.score;
-    //   get("#certificateDate").innerHTML = currentDateGlobal;
-    //   Scenes.items.certificate.show("flex").push();
+    // !Experimental result section 
+    //! R LOAD  Waveforms section
+    (step8 = function () {
+      setIsProcessRunning(true);
+      // to hide previous step
 
-    //   // * restart btn
+      //! Required Items
+      Scenes.items.btn_next.show();
+      Scenes.items.slider_box.hide();
 
-    //   let nxtBtn = get(".btn-next");
-    //   nxtBtn.innerHTML = "Restart";
-    //   nxtBtn.onclick = function () {
-    //     location.reload();
-    //   }
+      //r load click
+      let arrowIdx = 0;
+      let arrows = [
+        // () => {
+        //   Dom.setBlinkArrowRed(true, 669, 73, 30, null, 180).play();
+        //   arrowIdx++;
+        // },
+        () => {
+          Dom.setBlinkArrowRed(true, 669, 164-15, 30, null, 180).play();
+          arrowIdx++;
+        },
+        () => {
+          Dom.setBlinkArrowRed(true, 669, 256, 30, null, 180).play();
+          arrowIdx++;
+        },
+        () => {
+          Dom.setBlinkArrowRed(-1);
+        },
+      ];
 
-    //   return true;
-    // }),
+      arrows[arrowIdx]();
+      setCC("To View the experimental waveforms select the parameters and proceed further.");
+      Scenes.items.components_r_load.set(0, -36, 350);
+
+      let btns = [
+        // Scenes.items.btn_input_voltage.set(719, 159 - 92, 47).zIndex(1),
+        Scenes.items.btn_input_voltage.set(719, 159-15, 47).zIndex(1),
+        Scenes.items.btn_load_resistance.set(719, 159 + 92, 47).zIndex(1),
+      ];
+
+      let vals = [
+        // Scenes.items.val_v
+        //   .set(719, 35 + 159 - 92, 47)
+        //   .zIndex(1)
+        //   .hide(),
+        Scenes.items.val_v
+          .set(719, 35 + 159-15, 47)
+          .zIndex(1)
+          .hide(),
+        Scenes.items.val_r
+          .set(719, 35 + 159 + 92, 47)
+          .zIndex(1)
+          .hide(),
+      ];
+
+      let optionsClick = [0, 0];
+      let btn_see_waveforms = Scenes.items.bnt_click
+        .set(600, 374, 43)
+        .zIndex(1);
+
+      btns.forEach((btn, idx) => {
+        btn.item.onclick = () => {
+          arrows[arrowIdx]();
+          vals[idx].show();
+          optionsClick[idx] = 1;
+          if (optionsClick.indexOf(0) == -1) {
+            Scenes.items.circle.set(580, 346, 93);
+            btn_see_waveforms.item.classList.add("btn-img");
+            let scaleBtn = anime({
+              targets: Scenes.items.bnt_click.item,
+              scale: [1, 1.1],
+              duration: 1000,
+              easing: "linear",
+              loop: true,
+            });
+            btn_see_waveforms.item.onclick = () => {
+              scaleBtn.reset();
+              waveformShow();
+            };
+          }
+        };
+      });
+
+      let scenes = [
+        Scenes.items.r_load_click_1.set(15, -30, 444).hide(),
+        Scenes.items.r_load_click_2.set(15, -30, 444).hide(),
+        Scenes.items.r_load_click_3.set(15, -30, 444).hide(),
+        Scenes.items.r_load_click_4.set(15, -30, 444).hide(),
+      ];
+
+      let waveformShow = () => {
+        vals.forEach((_, idx) => {
+          btns[idx].hide();
+          vals[idx].hide();
+        });
+        Scenes.items.circle.set(580, 346, 93).hide();
+        Scenes.items.bnt_click.hide();
+        Scenes.items.components_r_load.hide();
+
+        // Dom.setBlinkArrowRed(true, 555, 162, 30, null, 0).play();
+        Dom.setBlinkArrowRed(-1)
+
+
+        scenes[0].show();
+        setCC(
+          "The experimental waveforms discussion is given here."
+        );
+        setCC("The load voltage increases with duty ratio, however, due to parasitics of the components load voltage start reducing in high duty ratio range.")
+
+        setTimeout(() => {
+          // setCC("Click 'Next' to go to next step");
+          Dom.setBlinkArrow(true, 790, 415).play();
+          setIsProcessRunning(false);
+        }, 6000);
+      };
+
+      return true;
+    }),
+    //! R LOAD  CLICK 2
+    (step9 = function () {
+      setIsProcessRunning(true);
+
+      //! Required Items
+      Scenes.items.btn_next.show();
+      Scenes.items.slider_box.hide();
+      // to hide previous step
+      Scenes.items.r_load_click_2.set(15, -30, 444);
+      Dom.setBlinkArrowRed(true, 555, 97, 30, null, 0).play();
+
+      setCC(
+        "This is the PWM driving signal and its duty ratio is 0.75 approximately."
+      );
+
+      setTimeout(() => {
+        // setCC("Click 'Next' to go to next step");
+        Dom.setBlinkArrow(true, 790, 415).play();
+        setIsProcessRunning(false);
+      }, 7000);
+
+      //! Required Items
+
+      return true;
+    }),
+    //! R LOAD  CLICK 3
+    (step10 = function () {
+      setIsProcessRunning(true);
+
+      //! Required Items
+      Scenes.items.btn_next.show();
+      Scenes.items.slider_box.hide();
+      // to hide previous step
+      Scenes.items.r_load_click_3.set(15, -30, 444);
+      Dom.setBlinkArrowRed(true, 555, 171, 30, null, 0).play();
+
+      setCC(
+        "Here, the inductor current waveform is shown which increases during switch-ON period and decreases when the switch is in OFF-state."
+      );
+
+      setTimeout(() => {
+        // setCC("Click 'Next' to go to next step");
+        Dom.setBlinkArrow(true, 790, 415).play();
+        setIsProcessRunning(false);
+      }, 7000);
+
+      //! Required Items
+
+      return true;
+    }),
+    //! R LOAD  CLICK 4
+    (step11 = function () {
+      setIsProcessRunning(true);
+
+      //! Required Items
+      Scenes.items.btn_next.show();
+      Scenes.items.slider_box.hide();
+      // to hide previous step
+      Scenes.items.r_load_click_4.set(15, -30, 444);
+      Dom.setBlinkArrowRed(true, 555, 228, 30, null, 0).play();
+
+      setCC(
+        "Voltage across the diode is equal to load voltage when switch is in ON-state and it is close to zero when diode conducts."
+      );
+
+      setTimeout(() => {
+        // setCC("Click 'Next' to go to next step");
+        Dom.setBlinkArrow(true, 790, 415).play();
+        setIsProcessRunning(false);
+      }, 7000);
+
+      //! Required Items
+
+      return true;
+    }),
+    //! R LOAD  CLICK 5
+    (step12 = function () {
+      setIsProcessRunning(true);
+
+      //! Required Items
+      Scenes.items.btn_next.show();
+      Scenes.items.slider_box.hide();
+
+      // to hide previous step
+      Scenes.items.rl_load_click_4.set(15, -30, 444);
+      Dom.setBlinkArrowRed(true, 555, 317, 30, null, 0).play();
+      // Dom.setBlinkArrowRed(-1)
+
+      setCC(
+        "Voltage across the switch is equal to load voltage when switch is in OFF-state and it is close to zero when it conducts."
+      );
+
+      setTimeout(() => {
+        // setCC("Click 'Next' to go to next step");
+        // Dom.setBlinkArrow(true, 790, 415).play();
+        // setIsProcessRunning(false);
+        setCC("Simulation Done")
+      }, 3000);
+
+      //! Required Items
+
+      return true;
+    }),
+
   ],
+  // ! For adding realcurrentstep in every step
+  // ! For tracking the current step accuratly
+  realCurrentStep: null,
+  setRealCurrentStep(){
+    let count = 0
+    this.steps.forEach((step,idx) => {
+      const constCount = count
+      let newStep = () => {
+        this.realCurrentStep = constCount;
+        console.log(`RealCurrentStep: ${this.realCurrentStep}`)
+        return step();
+      };
+
+      count++;
+      this.steps[idx] = newStep
+    });
+  },
   back() {
     //! animation isRunning
     // if (isRunning) {
@@ -3355,14 +3704,28 @@ concept_development: new Dom(".concept_development"),
     }
   },
   next() {
+    let ignore = true
+    const ignoreDrawerProgress = ()=>{
+      let stepsToIgnore = [5,6,7,8]
+      console.log(this.realCurrentStep)
+      ignore = stepsToIgnore.indexOf(this.realCurrentStep) != -1
+      return 
+    }
+    if(!this.realCurrentStep){
+      Scenes.setRealCurrentStep()
+    }
     //! animation isRunning
     if (isRunning) {
       return
     }
     if (this.currentStep < this.steps.length) {
+      ignoreDrawerProgress()
+
       if (this.steps[this.currentStep]()) {
-        nextDrawerItem();
-        nextProgressBar();
+        if(!ignore){
+          nextDrawerItem();
+          nextProgressBar();
+        }
         this.currentStep++;
       }         
     } else {
@@ -3447,7 +3810,20 @@ function btnPopupBox(){
   let popupWindow = document.querySelector(".btn-popup-window")
   
   popupBtns[0].onmouseover = ()=>{
-    popupWindow.src = Scenes.items.formulas_procedure.item.src
+    let procedure_1 = new Dom("formulas_procedure_slider_1")
+    
+    switch(Scenes.realCurrentStep){
+      case 5:
+      case 6:
+      case 7:
+      case 8:
+        popupWindow.src = procedure_1.item.src
+        break
+
+      default:
+        popupWindow.src = Scenes.items.formulas_procedure.item.src
+        break
+    }
   }
   popupBtns[1].onmouseover = ()=>{
     popupWindow.src = Scenes.items.formulas_nomenclautre.item.src

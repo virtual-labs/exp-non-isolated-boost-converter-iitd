@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>check</title>
+  </head>
+  <body>
+    <div class="btn-box">
+      <button onclick="">1</button>
+    </div>
+    <script>
+
+      let count = 0;
+      let realCurrentStep = null;
+      const getRandom = (b, a = 0) => {
+        return a + Math.floor(Math.random() * b);
+      };
+
+      let steps = [
+        (step1 = () => {
+          console.log(`step ${getRandom(5)}`);
+        }),
+        (step2 = () => {
+          console.log(`step ${getRandom(5)}`);
+        }),
+        (step3 = () => {
+          console.log(`step ${getRandom(5)}`);
+        }),
+        (step4 = () => {
+          console.log(`step ${getRandom(5)}`);
+        }),
+        (step5 = () => {
+          console.log(`step ${getRandom(5)}`);
+        }),
+      ];
+
+      count = 0;
+      const setRealCurrentStep = () => {
+        steps.forEach((step,idx) => {
+          const c = count
+          let newStep = () => {
+            realCurrentStep = c;
+            console.log(`realCurrentStep: ${realCurrentStep}`)  
+            step();
+          };
+
+          count++;
+          steps[idx] = newStep
+        });
+      };
+
+      setRealCurrentStep()
+
+      // set steps onclick
+      let html = ""
+      count = 0
+      steps.forEach(step=>{
+        let f = step
+        html += `<button>${count++}</button>`
+      })
+      document.querySelector(".btn-box").innerHTML = html
+      document.querySelectorAll("button").forEach((btn,idx)=>{
+        btn.onclick = steps[idx]
+      })
+      // steps.forEach((step) => step());
+    </script>
+  </body>
+</html>
