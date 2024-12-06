@@ -1,5 +1,9 @@
 ### Procedure
 
+<center>
+  <img src="images/procedbig1.png">
+</center>
+
 a) Circuit formulation:
 <br>
 1. Connect the circuit to form a Boost converter by dragging the mouse from one terminal to other.
