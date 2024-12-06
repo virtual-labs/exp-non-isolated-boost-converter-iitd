@@ -19,7 +19,7 @@ Based on the operation of switch (Sw: ON/OFF-state) the operating principle of t
   
 **Mode – I :  Switch (Sw): ON and Diode (Di): OFF**
 <br>
-<img src="images/th2.jpg">
+<img src="images/th3.jpg">
 <br><br>
 Fig. 2(a). Equivalent circuit in mode-I.
 <br><br>
@@ -31,7 +31,7 @@ Fig. 2(a). Equivalent circuit in mode-I.
   
 **Mode – II :  Switch (Sw): OFF and Diode (Di): ON**
 <br>
-<img src="images/th3.jpg">
+<img src="images/th2.jpg">
 <br><br>
 Fig. 2(b). Equivalent circuit in mode-II.
 <br><br>
