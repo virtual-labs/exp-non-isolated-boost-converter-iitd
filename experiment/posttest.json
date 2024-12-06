@@ -10,10 +10,10 @@
         "d": "is zero"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "Explanation 1",
+        "b": "Explanation 2: During switch-ON condition, the inductor stores the energy and it releases during diode conduction period (Switch-OFF duration) and hence inductor current gradually decreases.",
+        "c": "Explanation 3",
+        "d": "Explanation 4"
       },
       "correctAnswer": "b",
       "difficulty": "beginner"
@@ -28,10 +28,10 @@
         "d": "(V<sub>g</sub> - V<sub>0</sub>)"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "a": "Explanation 1",
         "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "c": "Explanation 3",
+        "d": "Explanation 4: Applying “KVL” gives the voltage across inductor as (V<sub>g</sub> - V<sub>0</sub>)."
       },
       "correctAnswer": "d",
       "difficulty": "beginner"
@@ -46,10 +46,10 @@
         "d": "D<sub>1</sub> = 0.7 ; D<sub>2</sub> = 0.175"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "a": "Explanation 1",
         "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "c": "Explanation 3: <img src='images/expl2.png' height='60px'> From this the resulting duty ratio is 0.7. The duty ratio is independent of switching frequency and hence D2=0.7.",
+        "d": "Explanation 4"
       },
       "correctAnswer": "c",
       "difficulty": "beginner"
@@ -65,10 +65,10 @@
         "d": "P<sub>Loss</sub> = 92 W"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "Explanation 1",
+        "b": "Explanation 2: <img src='images/expl3.png' height='60px'>",
+        "c": "Explanation 3",
+        "d": "Explanation 4"
       },
       "correctAnswer": "b",
       "difficulty": "beginner"
@@ -83,10 +83,10 @@
         "d": "v<sub>Sw</sub> = V<sub>0</sub> & v<sub>Di</sub> = V<sub>0</sub>"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "a": "Explanation 1",
         "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "c": "Explanation 3",
+        "d": "Explanation 4: When switch is in OFF state the voltage across it will be equal to load voltage and when switch is in ON state the voltage across diode will be equal to load voltage."
       },
       "correctAnswer": "d",
       "difficulty": "beginner"
