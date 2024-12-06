@@ -19,3 +19,7 @@ c) Performance analysis of the circuit:
 1) Set the values of Source Voltage (Vg), Load Resistance (R) and Duty Ratio (D).<br>
 2) Select the “ICONS” in sequence to analyse and understand the circuit operation and performance.<br>
 3) Follow the instructions given in respective experiment slide and press the “RECORD” button to fill the observation table.<br>
+
+<center>
+  <img src="images/proced1.png" height="220px">
+</center>
