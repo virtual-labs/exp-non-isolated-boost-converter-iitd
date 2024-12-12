@@ -507,6 +507,8 @@ Therefore, voltage gain of non-ideal boost converter is
 <div style="float: right; width:50%; text-align:center;">
     ..(25)
       </div>
-<br><br>
+<br>
 
+<div style="float: left; width:100%;"><br>
 #### ("For more Information on mathematical analysis, see references")
+<br></div>
