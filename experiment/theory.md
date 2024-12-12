@@ -509,3 +509,4 @@ Therefore, voltage gain of non-ideal boost converter is
       </div>
 <br><br>
 
+#### ("For more Information on mathematical analysis, see references")
