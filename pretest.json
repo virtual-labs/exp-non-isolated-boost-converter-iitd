@@ -1,0 +1,94 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "Answer the questions given below (refer Fig.1):<br> <center> <img src='images/pre1.png' height='300px'><br><br>Fig. 1. Circuit configuration of boost converter.</center><br><br> 1. Which of the following statements is true for an ideal boost converter?",
+      "answers": {        
+        "a": "It boosts the source current.",
+        "b": "It boosts the source voltage.",
+        "c": "It boosts the input power.",
+        "d": "It boosts the switching frequency."
+      },
+      "explanations": {
+        "a": "Explanation 1",
+        "b": "Explanation 2: Boost converter step-up the low input voltage to high load voltage and step-down the high input current to low load current.",
+        "c": "Explanation 3",
+        "d": "Explanation 4"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+      
+    {
+      "question": "2. Voltage conversion ratio of boost converter is:",
+      "answers": {
+        "a": "D",
+        "b": "(1-D)",
+        "c": "1/(1-D)",
+        "d": "D/(1-D)"
+      },
+      "explanations": {
+        "a": "Explanation 1",
+        "b": "Explanation 2",
+        "c": "Explanation 3: Among all the options, option (c) gives only boosting for the entire duty ratio range.",
+        "d": "Explanation 4"
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    
+    {
+      "question": "3. When high PWM gate signal is given to the switch (Sw):",
+      "answers": {
+        "a": "Switch turns-ON and diode turns-OFF",
+        "b": "Switch turns-OFF and diode turns-ON",
+        "c": "Both switch and diode turn-OFF",
+        "d": "Both switch and diode turn-ON"
+      },
+      "explanations": {
+        "a": "Explanation 1: When switch turns-ON the inductor is impressed with “+Vg” when it turns-OFF voltage across inductor changes its polarity (-Vg) and thus diode becomes forward biased.",
+        "b": "Explanation 2",
+        "c": "Explanation 3",
+        "d": "Explanation 4"
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+        
+    {
+      "question": "4. According to the principle of volt-sec balance:",
+      "answers": {
+        "a": "Average voltage across capacitor is zero",
+        "b": "Average voltage across inductor is zero",
+        "c": "Average voltage across diode is zero",
+        "d": "Average voltage across switch is zero"
+      },
+      "explanations": {
+        "a": "Explanation 1",
+        "b": "Explanation 2: The volt-second balance states that the average value of voltage applied across the inductor one complete cycle is zero.",
+        "c": "Explanation 3",
+        "d": "Explanation 4"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    
+    {
+      "question": "5. Calculate the average source current in an ideal boost converter delivering a load current of 2A at a duty ratio of 0.6.",
+      "answers": {
+        "a": "1.2 A",
+        "b": "2.0 A",
+        "c": "5.0 A",
+        "d": "3.33 A"
+      },
+      "explanations": {
+        "a": "Explanation 1",
+        "b": "Explanation 2",
+        "c": "Explanation 3: <img src='images/expl1.png' height='60px'>",
+        "d": "Explanation 4"
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    }
+  ]
+}
